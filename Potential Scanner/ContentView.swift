@@ -9,72 +9,52 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @State private var path = NavigationPath()
+    @State private var showSplash = true
 
     var body: some View {
-        NavigationViewWrapper {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        ZStack {
+            NavigationStack(path: $path) {
+                HomeView(path: $path)
+                    .navigationDestination(for: AppRoute.self) { route in
+                        switch route {
+                        case .scan:
+                            ScanView(
+                                onFinished: { result in
+                                    path.append(AppRoute.result(ScanResultToken(result)))
+                                },
+                                onCancel: { path.removeLast() }
+                            )
+                            .navigationBarBackButtonHidden()
+
+                        case .result(let token):
+                            ResultView(result: token.result) {
+                                path.removeLast(path.count)
+                            }
+                            .navigationBarBackButtonHidden()
+
+                        case .cardList:
+                            CardListView(path: $path)
+
+                        case .cardDetail(let card):
+                            CardDetailView(card: card) {
+                                path.removeLast()
+                            }
+                        }
                     }
-                }
-                .onDelete(perform: deleteItems)
             }
-#if os(macOS)
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-#endif
-            .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
+            .opacity(showSplash ? 0 : 1)
+
+            if showSplash {
+                SplashView()
+                    .transition(.opacity)
+            }
+        }
+        .task {
+            try? await Task.sleep(for: .seconds(1.4))
+            withAnimation(.easeOut(duration: 0.4)) {
+                showSplash = false
             }
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
-    }
-}
-
-fileprivate struct NavigationViewWrapper<Content: View>: View {
-    let content: () -> Content
-
-    var body: some View {
-#if os(macOS)
-        NavigationSplitView {
-            content()
-        } detail: {
-            Text("Select an item")
-        }
-#else
-        content()
-#endif
-    }
-}
-
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
 }
