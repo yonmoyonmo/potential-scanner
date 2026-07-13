@@ -28,9 +28,11 @@ struct ContentView: View {
                             .navigationBarBackButtonHidden()
 
                         case .result(let token):
-                            ResultView(result: token.result) {
-                                path.removeLast(path.count)
-                            }
+                            ResultView(
+                                result: token.result,
+                                onSaved: { path.removeLast(path.count) },
+                                onCancel: { path.removeLast(path.count) }
+                            )
                             .navigationBarBackButtonHidden()
 
                         case .cardList:

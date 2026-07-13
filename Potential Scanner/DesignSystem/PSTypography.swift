@@ -31,3 +31,18 @@ enum PSTypography {
     static var summary: Font { font(size: 18) }
     static var body: Font { font(size: 17) }
 }
+
+extension View {
+    /// `.navigationTitle`은 UIKit 네비게이션 바가 그리는 텍스트라 SwiftUI Font가 안 먹는다.
+    /// principal 툴바 아이템에 직접 Text를 그려서 커스텀 폰트를 적용한다.
+    func psNavigationTitle(_ localizationKey: String) -> some View {
+        navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text(String(localized: String.LocalizationValue(localizationKey)))
+                        .font(PSTypography.pageTitle)
+                        .foregroundStyle(PSColor.ink)
+                }
+            }
+    }
+}

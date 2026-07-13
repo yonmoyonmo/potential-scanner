@@ -9,7 +9,6 @@ import SwiftData
 struct CardListView: View {
     @Binding var path: NavigationPath
 
-    @Environment(\.modelContext) private var modelContext
     @Query(sort: \ScanCard.scannedAt, order: .reverse) private var cards: [ScanCard]
 
     var body: some View {
@@ -28,22 +27,26 @@ struct CardListView: View {
                         } label: {
                             CardRow(card: card)
                         }
-                        .buttonStyle(.plain)
+                        .buttonStyle(PressableRowStyle())
                         .listRowBackground(Color.clear)
+                        .listRowSeparator(.hidden)
+                        .listRowInsets(EdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16))
                     }
-                    .onDelete(perform: delete)
                 }
                 .scrollContentBackground(.hidden)
                 .listStyle(.plain)
             }
         }
-        .navigationTitle(String(localized: String.LocalizationValue("ui.cardList.title")))
+        .psNavigationTitle("ui.cardList.title")
     }
+}
 
-    private func delete(at offsets: IndexSet) {
-        for index in offsets {
-            modelContext.delete(cards[index])
-        }
+private struct PressableRowStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 0.97 : 1)
+            .opacity(configuration.isPressed ? 0.85 : 1)
+            .animation(.easeOut(duration: 0.15), value: configuration.isPressed)
     }
 }
 
@@ -53,21 +56,30 @@ private struct CardRow: View {
     var body: some View {
         HStack(spacing: 12) {
             thumbnail
-                .frame(width: 56, height: 56)
+                .frame(width: 64, height: 64)
                 .clipShape(RoundedRectangle(cornerRadius: PSRadius.card))
 
             VStack(alignment: .leading, spacing: 4) {
-                Text(PotentialType.find(byID: card.typeID)?.name ?? card.typeID)
+                Text(card.displayName)
                     .font(PSTypography.body)
                     .foregroundStyle(PSColor.ink)
-                Text("\(card.power)")
+                Text("\(PotentialType.find(byID: card.typeID)?.displayLabel ?? card.typeID) · \(card.power)")
                     .font(.caption)
                     .foregroundStyle(PSColor.soft)
             }
 
             Spacer()
+
+            Image(systemName: "chevron.right")
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(PSColor.soft)
         }
-        .padding(.vertical, 4)
+        .padding(12)
+        .background(
+            RoundedRectangle(cornerRadius: PSRadius.card)
+                .fill(PSColor.cardFill)
+        )
+        .psHardShadow(radius: PSRadius.card)
     }
 
     @ViewBuilder

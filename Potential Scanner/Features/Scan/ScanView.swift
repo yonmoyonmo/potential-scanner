@@ -3,13 +3,25 @@
 //  Potential Scanner
 //
 
-import SwiftUI
 import AVFoundation
+import Combine
+import SwiftUI
 
 struct ScanView: View {
     @State private var viewModel = ScanViewModel()
     var onFinished: (ScanResult) -> Void
     var onCancel: () -> Void
+
+    @State private var hapticPulse = 0
+    @State private var captureHapticTrigger = 0
+    @State private var captureFlash = false
+
+    private var isScanning: Bool {
+        if case .scanning = viewModel.phase { return true }
+        return false
+    }
+
+    private let hapticTimer = Timer.publish(every: 1.4, on: .main, in: .common).autoconnect()
 
     var body: some View {
         ZStack {
@@ -19,7 +31,16 @@ struct ScanView: View {
             if case .scanning = viewModel.phase {
                 ScanOverlayView(isScanning: true)
                     .ignoresSafeArea()
+                ScanHUDView(isScanning: true)
+                    .ignoresSafeArea()
+                ScanGlitchView(isScanning: true)
+                    .ignoresSafeArea()
             }
+
+            Color.white
+                .opacity(captureFlash ? 1 : 0)
+                .ignoresSafeArea()
+                .allowsHitTesting(false)
 
             VStack {
                 HStack {
@@ -59,8 +80,18 @@ struct ScanView: View {
         }
         .onAppear { viewModel.onAppear() }
         .onDisappear { viewModel.onDisappear() }
+        .onReceive(hapticTimer) { _ in
+            if isScanning { hapticPulse += 1 }
+        }
+        .sensoryFeedback(.impact(weight: .light), trigger: hapticPulse)
+        .sensoryFeedback(.success, trigger: captureHapticTrigger)
         .onChange(of: viewModel.phase) { _, newPhase in
-            if case .finished(let result) = newPhase {
+            guard case .finished(let result) = newPhase else { return }
+            captureHapticTrigger += 1
+            withAnimation(.linear(duration: 0.05)) { captureFlash = true }
+            Task {
+                try? await Task.sleep(for: .milliseconds(120))
+                withAnimation(.easeOut(duration: 0.25)) { captureFlash = false }
                 onFinished(result)
             }
         }

@@ -19,7 +19,7 @@ struct SplashView: View {
             Image("logo")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 140, height: 140)
+                .frame(width: 200, height: 200)
                 .opacity(isVisible ? 1 : 0)
                 .scaleEffect(isVisible ? 1 : 0.92)
         }

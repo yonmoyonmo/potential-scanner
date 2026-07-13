@@ -2,9 +2,11 @@
 //  ScanOverlayView.swift
 //  Potential Scanner
 //
-//  스캔 중 재생되는 그리드/레이더/스캔라인 연출.
+//  스캔 중 재생되는 그리드/레이더/스캔라인 연출. 눈에 확 띄도록 두껍게, 스캔 진행 중
+//  주기적으로 색이 바뀌는 네온 톤으로 구성.
 //
 
+import Combine
 import SwiftUI
 
 struct ScanOverlayView: View {
@@ -12,6 +14,15 @@ struct ScanOverlayView: View {
 
     @State private var scanLineProgress: CGFloat = 0
     @State private var radarRotation: Angle = .zero
+    @State private var colorIndex = 0
+
+    private let colorCycleTimer = Timer.publish(every: 0.7, on: .main, in: .common).autoconnect()
+
+    private let vividColors: [Color] = [
+        PSColor.skyStrong, PSColor.signalAmber, PSColor.signalMagenta, PSColor.grassMid,
+    ]
+
+    private var currentColor: Color { vividColors[colorIndex % vividColors.count] }
 
     var body: some View {
         GeometryReader { proxy in
@@ -19,32 +30,38 @@ struct ScanOverlayView: View {
                 gridLines(in: proxy.size)
 
                 Circle()
-                    .strokeBorder(PSColor.skyStrong.opacity(0.6), lineWidth: 1.5)
+                    .strokeBorder(currentColor, lineWidth: 3)
                     .frame(width: proxy.size.width * 0.7)
                     .overlay(
                         Rectangle()
-                            .fill(PSColor.skyStrong.opacity(0.5))
-                            .frame(width: proxy.size.width * 0.35, height: 1.5)
+                            .fill(currentColor)
+                            .frame(width: proxy.size.width * 0.35, height: 4)
                             .offset(x: proxy.size.width * 0.175)
                             .rotationEffect(radarRotation)
                     )
+                    .shadow(color: currentColor.opacity(0.8), radius: 8)
                     .position(x: proxy.size.width / 2, y: proxy.size.height / 2)
 
                 Rectangle()
                     .fill(
                         LinearGradient(
-                            colors: [.clear, PSColor.skyStrong.opacity(0.55), .clear],
+                            colors: [.clear, currentColor, .clear],
                             startPoint: .top,
                             endPoint: .bottom
                         )
                     )
-                    .frame(height: 3)
+                    .frame(height: 8)
+                    .shadow(color: currentColor.opacity(0.9), radius: 10)
                     .position(x: proxy.size.width / 2, y: proxy.size.height * scanLineProgress)
             }
         }
         .allowsHitTesting(false)
         .onAppear { startAnimationsIfNeeded() }
         .onChange(of: isScanning) { _, _ in startAnimationsIfNeeded() }
+        .onReceive(colorCycleTimer) { _ in
+            guard isScanning else { return }
+            colorIndex += 1
+        }
     }
 
     private func startAnimationsIfNeeded() {
@@ -73,6 +90,6 @@ struct ScanOverlayView: View {
                 path.addLine(to: CGPoint(x: size.width, y: y))
             }
         }
-        .stroke(PSColor.skyStrong.opacity(0.15), lineWidth: 0.5)
+        .stroke(currentColor.opacity(0.28), lineWidth: 1)
     }
 }

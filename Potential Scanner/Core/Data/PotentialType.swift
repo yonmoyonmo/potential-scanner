@@ -17,6 +17,11 @@ struct PotentialType: Identifiable, Hashable {
 
     var name: String { String(localized: String.LocalizationValue(nameKey)) }
     var description: String { String(localized: String.LocalizationValue(descriptionKey)) }
+
+    /// "불의 호흡 타입" / "Fire Breathing Type" / "水の呼吸タイプ" 처럼 항상 붙는 "타입" 접미사 포함 표기.
+    var displayLabel: String {
+        "\(name) \(String(localized: String.LocalizationValue("ui.type.suffix")))"
+    }
 }
 
 extension PotentialType {

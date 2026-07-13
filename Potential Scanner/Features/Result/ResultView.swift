@@ -9,9 +9,13 @@ import SwiftData
 struct ResultView: View {
     let result: ScanResult
     var onSaved: () -> Void
+    var onCancel: () -> Void
 
     @Environment(\.modelContext) private var modelContext
     @State private var isSaved = false
+    @State private var cardName = ""
+    @State private var showNamePrompt = false
+    @State private var showDiscardConfirm = false
 
     var body: some View {
         ZStack {
@@ -43,7 +47,7 @@ struct ResultView: View {
 
                             Divider().background(PSColor.divider)
 
-                            Text(result.type.name)
+                            Text(result.type.displayLabel)
                                 .font(PSTypography.pageTitle)
                                 .foregroundStyle(PSColor.skyStrong)
                             Text(result.type.description)
@@ -69,18 +73,48 @@ struct ResultView: View {
                         )),
                         isProminent: !isSaved
                     ) {
-                        save()
+                        showNamePrompt = true
                     }
                     .disabled(isSaved)
+
+                    if !isSaved {
+                        PSButton(
+                            title: String(localized: String.LocalizationValue("ui.result.discardButton")),
+                            isProminent: false
+                        ) {
+                            showDiscardConfirm = true
+                        }
+                    }
                 }
                 .padding(20)
             }
         }
+        .psTextPromptModal(
+            isPresented: $showNamePrompt,
+            text: $cardName,
+            title: String(localized: String.LocalizationValue("ui.result.namePromptTitle")),
+            placeholder: String(localized: String.LocalizationValue("ui.result.namePlaceholder")),
+            confirmTitle: String(localized: String.LocalizationValue("ui.cardList.renameSave"))
+        ) {
+            save()
+        }
+        .psConfirmModal(
+            isPresented: $showDiscardConfirm,
+            title: String(localized: String.LocalizationValue("ui.confirm.discardTitle")),
+            message: String(localized: String.LocalizationValue("ui.confirm.discardMessage")),
+            confirmTitle: String(localized: String.LocalizationValue("ui.confirm.discardConfirm"))
+        ) {
+            onCancel()
+        }
     }
 
     private func save() {
-        guard !isSaved, let photoData = result.photo.jpegData(compressionQuality: 0.85) else { return }
+        guard !isSaved else { return }
+        let downscaled = result.photo.downscaled(maxDimension: 1200)
+        let photoData = downscaled.jpegData(compressionQuality: 0.85) ?? result.photo.jpegData(compressionQuality: 0.85)
+        guard let photoData else { return }
         let card = ScanCard(
+            name: cardName.trimmingCharacters(in: .whitespacesAndNewlines),
             photoData: photoData,
             power: result.power,
             typeID: result.type.id,
