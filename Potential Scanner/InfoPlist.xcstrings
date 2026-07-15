@@ -47,6 +47,18 @@
           }
         }
       }
+    },
+    "NSPhotoLibraryAddUsageDescription" : {
+      "comment" : "Privacy - Photo Library Additions Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "카드 이미지를 사진 앱에 저장하려면 접근 권한이 필요합니다."
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

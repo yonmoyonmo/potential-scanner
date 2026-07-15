@@ -14,8 +14,20 @@ struct CardDetailView: View {
     @State private var showRenamePrompt = false
     @State private var renameText = ""
     @State private var showDeleteConfirm = false
+    @State private var saveImageState: SaveImageState = .idle
+    @State private var showSaveImageFailed = false
 
-    private var type: PotentialType? { PotentialType.find(byID: card.typeID) }
+    private enum SaveImageState: Equatable {
+        case idle, saving, saved
+
+        var titleKey: String {
+            switch self {
+            case .idle: "ui.cardDetail.saveImageButton"
+            case .saving: "ui.cardDetail.saveImageSaving"
+            case .saved: "ui.cardDetail.saveImageSaved"
+            }
+        }
+    }
 
     var body: some View {
         ZStack {
@@ -23,50 +35,17 @@ struct CardDetailView: View {
 
             ScrollView {
                 VStack(spacing: 20) {
-                    photo
-                        .frame(height: 280)
-                        .clipShape(RoundedRectangle(cornerRadius: PSRadius.card))
-                        .psHardShadow(radius: PSRadius.card)
+                    ScaledCardArtboard(content: CardArtboardContent(card: card))
+                        .frame(maxWidth: 420)
+                        .frame(maxWidth: .infinity)
 
-                    PSCard {
-                        VStack(alignment: .leading, spacing: 12) {
-                            Text(card.displayName)
-                                .font(PSTypography.heroTitle)
-                                .foregroundStyle(PSColor.ink)
-
-                            HStack {
-                                Text(String(localized: String.LocalizationValue("ui.result.powerLabel")))
-                                    .font(PSTypography.body)
-                                    .foregroundStyle(PSColor.soft)
-                                Spacer()
-                                Text("\(card.power)")
-                                    .font(PSTypography.pageTitle)
-                                    .foregroundStyle(PSColor.ink)
-                            }
-
-                            Divider().background(PSColor.divider)
-
-                            Text(type?.displayLabel ?? card.typeID)
-                                .font(PSTypography.pageTitle)
-                                .foregroundStyle(PSColor.skyStrong)
-                            if let type {
-                                Text(type.description)
-                                    .font(PSTypography.body)
-                                    .foregroundStyle(PSColor.muted)
-                            }
-
-                            Divider().background(PSColor.divider)
-
-                            Text(CommentPool.text(forID: card.commentID))
-                                .font(PSTypography.body)
-                                .foregroundStyle(PSColor.ink)
-
-                            Text(card.scannedAt.formatted(date: .abbreviated, time: .shortened))
-                                .font(.caption)
-                                .foregroundStyle(PSColor.soft)
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
+                    PSButton(
+                        title: String(localized: String.LocalizationValue(saveImageState.titleKey)),
+                        isProminent: true
+                    ) {
+                        saveImage()
                     }
+                    .disabled(saveImageState != .idle)
 
                     PSButton(
                         title: String(localized: String.LocalizationValue("ui.cardDetail.renameButton")),
@@ -105,17 +84,35 @@ struct CardDetailView: View {
             modelContext.delete(card)
             onDeleted()
         }
+        .psConfirmModal(
+            isPresented: $showSaveImageFailed,
+            title: String(localized: String.LocalizationValue("ui.cardDetail.saveImageFailedTitle")),
+            message: String(localized: String.LocalizationValue("ui.cardDetail.saveImageFailedMessage")),
+            confirmTitle: String(localized: String.LocalizationValue("ui.cardDetail.saveImageOpenSettings"))
+        ) {
+            if let url = URL(string: UIApplication.openSettingsURLString) {
+                UIApplication.shared.open(url)
+            }
+        }
     }
 
-    @ViewBuilder
-    private var photo: some View {
-        if let uiImage = UIImage(data: card.photoData) {
-            Image(uiImage: uiImage)
-                .resizable()
-                .scaledToFill()
-        } else {
-            RoundedRectangle(cornerRadius: PSRadius.card)
-                .fill(PSColor.cardFill)
+    private func saveImage() {
+        saveImageState = .saving
+        Task {
+            guard let image = CardImageSaver.renderImage(content: CardArtboardContent(card: card)) else {
+                saveImageState = .idle
+                showSaveImageFailed = true
+                return
+            }
+            do {
+                try await CardImageSaver.save(image)
+                saveImageState = .saved
+                try? await Task.sleep(for: .seconds(1.5))
+                saveImageState = .idle
+            } catch {
+                saveImageState = .idle
+                showSaveImageFailed = true
+            }
         }
     }
 }

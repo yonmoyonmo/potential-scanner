@@ -5,6 +5,7 @@
 
 import AVFoundation
 import Combine
+import PhotosUI
 import SwiftUI
 
 struct ScanView: View {
@@ -15,6 +16,8 @@ struct ScanView: View {
     @State private var hapticPulse = 0
     @State private var captureHapticTrigger = 0
     @State private var captureFlash = false
+    @State private var pickerItem: PhotosPickerItem?
+    @State private var pickedImage: UIImage?
 
     private var isScanning: Bool {
         if case .scanning = viewModel.phase { return true }
@@ -25,8 +28,19 @@ struct ScanView: View {
 
     var body: some View {
         ZStack {
-            CameraPreview(session: viewModel.camera.session)
+            if let pickedImage {
+                GeometryReader { geo in
+                    Image(uiImage: pickedImage)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: geo.size.width, height: geo.size.height)
+                        .clipped()
+                }
                 .ignoresSafeArea()
+            } else {
+                CameraPreview(session: viewModel.camera.session)
+                    .ignoresSafeArea()
+            }
 
             if case .scanning = viewModel.phase {
                 ScanOverlayView(isScanning: true)
@@ -58,8 +72,23 @@ struct ScanView: View {
 
                 switch viewModel.phase {
                 case .idle:
-                    PSButton(title: String(localized: String.LocalizationValue("ui.home.scanButton"))) {
-                        Task { await viewModel.startScan() }
+                    VStack(spacing: 12) {
+                        PSButton(title: String(localized: String.LocalizationValue("ui.home.scanButton"))) {
+                            Task { await viewModel.startScan() }
+                        }
+
+                        PhotosPicker(selection: $pickerItem, matching: .images) {
+                            Text(String(localized: String.LocalizationValue("ui.scan.pickPhotoButton")))
+                                .font(PSTypography.summary)
+                                .foregroundStyle(PSColor.ink)
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 14)
+                                .background(
+                                    RoundedRectangle(cornerRadius: PSRadius.card)
+                                        .fill(PSColor.cardFill)
+                                )
+                        }
+                        .psHardShadow(radius: PSRadius.card)
                     }
                     .padding(.horizontal, 40)
                     .padding(.bottom, 40)
@@ -80,6 +109,17 @@ struct ScanView: View {
         }
         .onAppear { viewModel.onAppear() }
         .onDisappear { viewModel.onDisappear() }
+        .onChange(of: pickerItem) { _, newItem in
+            guard let newItem else { return }
+            Task {
+                guard
+                    let data = try? await newItem.loadTransferable(type: Data.self),
+                    let image = UIImage(data: data)
+                else { return }
+                pickedImage = image
+                await viewModel.startScan(with: image)
+            }
+        }
         .onReceive(hapticTimer) { _ in
             if isScanning { hapticPulse += 1 }
         }

@@ -14,7 +14,6 @@ final class ScanCard {
     var power: Int
     var typeID: String
     var commentID: String
-    var closingLineID: String
     var scannedAt: Date
 
     init(
@@ -23,7 +22,6 @@ final class ScanCard {
         power: Int,
         typeID: String,
         commentID: String,
-        closingLineID: String,
         scannedAt: Date = .now
     ) {
         self.id = UUID()
@@ -32,7 +30,6 @@ final class ScanCard {
         self.power = power
         self.typeID = typeID
         self.commentID = commentID
-        self.closingLineID = closingLineID
         self.scannedAt = scannedAt
     }
 }

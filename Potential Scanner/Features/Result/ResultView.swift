@@ -23,49 +23,17 @@ struct ResultView: View {
 
             ScrollView {
                 VStack(spacing: 20) {
-                    Image(uiImage: result.photo)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(height: 280)
-                        .clipShape(RoundedRectangle(cornerRadius: PSRadius.card))
-                        .psHardShadow(radius: PSRadius.card)
+                    ScaledCardArtboard(content: CardArtboardContent(result: result, name: cardName))
+                        .frame(maxWidth: 420)
+                        .frame(maxWidth: .infinity)
 
-                    PSCard {
-                        VStack(alignment: .leading, spacing: 12) {
-                            HStack {
-                                Text(String(localized: String.LocalizationValue("ui.result.powerLabel")))
-                                    .font(PSTypography.body)
-                                    .foregroundStyle(PSColor.soft)
-                                Spacer()
-                                Text("\(result.power)")
-                                    .font(PSTypography.pageTitle)
-                                    .foregroundStyle(PSColor.ink)
-                            }
-                            Text(CommentPool.text(forID: result.powerBasisID))
-                                .font(.caption)
-                                .foregroundStyle(PSColor.soft)
+                    Text(CommentPool.text(forID: result.powerBasisID))
+                        .font(.caption)
+                        .foregroundStyle(PSColor.soft)
 
-                            Divider().background(PSColor.divider)
-
-                            Text(result.type.displayLabel)
-                                .font(PSTypography.pageTitle)
-                                .foregroundStyle(PSColor.skyStrong)
-                            Text(result.type.description)
-                                .font(PSTypography.body)
-                                .foregroundStyle(PSColor.muted)
-
-                            Divider().background(PSColor.divider)
-
-                            Text(CommentPool.text(forID: result.commentID))
-                                .font(PSTypography.body)
-                                .foregroundStyle(PSColor.ink)
-
-                            Text(CommentPool.text(forID: result.closingLineID))
-                                .font(.caption)
-                                .foregroundStyle(PSColor.soft)
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    }
+                    Text(CommentPool.text(forID: result.closingLineID))
+                        .font(.caption)
+                        .foregroundStyle(PSColor.soft)
 
                     PSButton(
                         title: String(localized: String.LocalizationValue(
@@ -118,8 +86,7 @@ struct ResultView: View {
             photoData: photoData,
             power: result.power,
             typeID: result.type.id,
-            commentID: result.commentID,
-            closingLineID: result.closingLineID
+            commentID: result.commentID
         )
         modelContext.insert(card)
         isSaved = true
