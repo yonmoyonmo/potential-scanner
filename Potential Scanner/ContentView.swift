@@ -42,6 +42,20 @@ struct ContentView: View {
                             CardDetailView(card: card) {
                                 path.removeLast()
                             }
+
+                        case .battle:
+                            BattleView()
+
+                        case .multiplayerBattle:
+                            MultiplayerBattleView()
+
+                        case .history:
+                            BattleHistoryView(path: $path)
+
+                        case .battleRecord(let record):
+                            BattleRecordDetailView(record: record) {
+                                path.removeLast()
+                            }
                         }
                     }
             }

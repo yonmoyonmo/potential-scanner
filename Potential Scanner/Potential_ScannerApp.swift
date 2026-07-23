@@ -24,7 +24,7 @@ struct Potential_ScannerApp: App {
     /// 실패 시 기존 로컬 저장소를 지우고 새로 만들어 앱이 항상 뜨도록 한다
     /// (아직 실 사용자 데이터가 없는 개발 단계라 로컬 카드 데이터 유실은 감수).
     private static func makeModelContainer() -> ModelContainer {
-        let schema = Schema([ScanCard.self])
+        let schema = Schema([ScanCard.self, BattleRecord.self])
         let configuration = ModelConfiguration(schema: schema)
         do {
             return try ModelContainer(for: schema, configurations: [configuration])

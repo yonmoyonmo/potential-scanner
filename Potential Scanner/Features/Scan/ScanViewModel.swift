@@ -62,7 +62,9 @@ final class ScanViewModel {
     }
 
     private func finish(with photo: UIImage) {
-        let result = ScanResultGenerator.generate(from: photo)
+        // 카드 사진이 3:4로 보이므로, 캡처 이미지도 3:4로 크롭해 프레이밍 가이드와 맞춘다.
+        let cropped = photo.croppedToAspect(widthToHeight: 3.0 / 4.0)
+        let result = ScanResultGenerator.generate(from: cropped)
         phase = .finished(result)
     }
 

@@ -24,6 +24,13 @@
 	<string>대상을 스캔하려면 카메라 접근 권한이 필요합니다.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>카드 이미지를 사진 앱에 저장하려면 접근 권한이 필요합니다.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>근처 기기와 배틀하려면 로컬 네트워크 접근 권한이 필요합니다.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_potscan-btl._tcp</string>
+		<string>_potscan-btl._udp</string>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Sam3KRFont.ttf</string>

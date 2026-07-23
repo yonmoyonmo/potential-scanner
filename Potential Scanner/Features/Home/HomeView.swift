@@ -29,6 +29,30 @@ struct HomeView: View {
                     path.append(AppRoute.cardList)
                 }
                 .padding(.horizontal, 40)
+
+                PSButton(
+                    title: String(localized: String.LocalizationValue("ui.home.battleButton")),
+                    isProminent: false
+                ) {
+                    path.append(AppRoute.battle)
+                }
+                .padding(.horizontal, 40)
+
+                PSButton(
+                    title: String(localized: String.LocalizationValue("ui.home.multiBattleButton")),
+                    isProminent: false
+                ) {
+                    path.append(AppRoute.multiplayerBattle)
+                }
+                .padding(.horizontal, 40)
+
+                PSButton(
+                    title: String(localized: String.LocalizationValue("ui.home.historyButton")),
+                    isProminent: false
+                ) {
+                    path.append(AppRoute.history)
+                }
+                .padding(.horizontal, 40)
             }
         }
     }

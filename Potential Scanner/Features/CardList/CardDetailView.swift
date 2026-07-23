@@ -39,6 +39,13 @@ struct CardDetailView: View {
                         .frame(maxWidth: 420)
                         .frame(maxWidth: .infinity)
 
+                    Text(String(
+                        format: String(localized: String.LocalizationValue("ui.cardDetail.record")),
+                        card.wins, card.losses
+                    ))
+                    .font(PSTypography.body)
+                    .foregroundStyle(PSColor.soft)
+
                     PSButton(
                         title: String(localized: String.LocalizationValue(saveImageState.titleKey)),
                         isProminent: true

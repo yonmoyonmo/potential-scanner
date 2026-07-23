@@ -42,6 +42,10 @@ struct ScanView: View {
                     .ignoresSafeArea()
             }
 
+            if case .idle = viewModel.phase {
+                ScanFramingGuide()
+            }
+
             if case .scanning = viewModel.phase {
                 ScanOverlayView(isScanning: true)
                     .ignoresSafeArea()

@@ -17,7 +17,12 @@ enum CardImageSaver {
 
     @MainActor
     static func renderImage(content: CardArtboardContent, scale: CGFloat = 3) -> UIImage? {
-        let renderer = ImageRenderer(content: CardArtboardView(content: content))
+        renderImage(CardArtboardView(content: content), scale: scale)
+    }
+
+    @MainActor
+    static func renderImage(_ view: some View, scale: CGFloat = 3) -> UIImage? {
+        let renderer = ImageRenderer(content: view)
         renderer.scale = scale
         return renderer.uiImage
     }

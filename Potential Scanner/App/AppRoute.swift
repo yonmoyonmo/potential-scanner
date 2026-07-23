@@ -10,6 +10,10 @@ enum AppRoute: Hashable {
     case result(ScanResultToken)
     case cardList
     case cardDetail(ScanCard)
+    case battle
+    case multiplayerBattle
+    case history
+    case battleRecord(BattleRecord)
 }
 
 /// NavigationPath에 넣을 수 있도록 ScanResult를 감싸는 Hashable 토큰.

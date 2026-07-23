@@ -15,6 +15,8 @@ final class ScanCard {
     var typeID: String
     var commentID: String
     var scannedAt: Date
+    var wins: Int = 0
+    var losses: Int = 0
 
     init(
         name: String,
