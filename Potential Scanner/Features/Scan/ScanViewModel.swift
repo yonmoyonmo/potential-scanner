@@ -26,16 +26,15 @@ final class ScanViewModel {
         camera.stop()
     }
 
-    /// 카메라로 직접 촬영해서 스캔.
+    /// 카메라로 직접 촬영해서 스캔. 연출이 끝난 뒤에 셔터를 눌러, 조준하고
+    /// 기다렸다 찍는 느낌을 준다 (연출 중엔 라이브 카메라 프리뷰가 계속 보임).
     @MainActor
     func startScan() async {
         guard case .idle = phase else { return }
         phase = .scanning
 
-        async let capture = camera.capturePhoto()
         await playScanningAnimation()
-
-        let photo = await capture ?? UIImage()
+        let photo = await camera.capturePhoto() ?? UIImage()
         finish(with: photo)
     }
 

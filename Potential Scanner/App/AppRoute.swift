@@ -14,6 +14,7 @@ enum AppRoute: Hashable {
     case multiplayerBattle
     case history
     case battleRecord(BattleRecord)
+    case cardExchange
 }
 
 /// NavigationPath에 넣을 수 있도록 ScanResult를 감싸는 Hashable 토큰.

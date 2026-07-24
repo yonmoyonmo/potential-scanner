@@ -137,8 +137,8 @@ struct BattleRevealView: View {
         // 1) 전투력 오도미터: 숫자를 빠르게 굴리다가 점점 느려지며 실제값에 착지.
         let steps = 40
         for i in 0..<steps {
-            displayedPowerA = Int.random(in: 1...999_999)
-            displayedPowerB = Int.random(in: 1...999_999)
+            displayedPowerA = Int.random(in: PowerCalculator.range)
+            displayedPowerB = Int.random(in: PowerCalculator.range)
             rollTick += 1
             let t = Double(i) / Double(steps)
             try? await Task.sleep(for: .milliseconds(Int(30 + t * t * 210)))

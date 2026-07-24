@@ -145,6 +145,7 @@ struct CardPickerSheet: View {
                             }
                             Spacer()
                         }
+                        .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                     .listRowBackground(Color.clear)

@@ -17,9 +17,9 @@ struct CardArtboardContent {
     let comment: String
     let dateText: String
 
-    /// 전투력(1~999,999)을 100,000 단위로 쪼개 최대 10개의 별로 환산.
+    /// 전투력(0~10,000,000)을 100만 단위로 쪼개 최대 10개의 별로 환산.
     var starCount: Int {
-        min(10, max(1, Int(ceil(Double(power) / 100_000))))
+        min(10, max(1, Int(ceil(Double(power) / 1_000_000))))
     }
 }
 

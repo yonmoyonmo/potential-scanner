@@ -53,6 +53,14 @@ struct HomeView: View {
                     path.append(AppRoute.history)
                 }
                 .padding(.horizontal, 40)
+
+                PSButton(
+                    title: String(localized: String.LocalizationValue("ui.home.exchangeButton")),
+                    isProminent: false
+                ) {
+                    path.append(AppRoute.cardExchange)
+                }
+                .padding(.horizontal, 40)
             }
         }
     }

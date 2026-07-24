@@ -56,6 +56,9 @@ struct ContentView: View {
                             BattleRecordDetailView(record: record) {
                                 path.removeLast()
                             }
+
+                        case .cardExchange:
+                            NearbyCardExchangeView()
                         }
                     }
             }
