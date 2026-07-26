@@ -3,7 +3,7 @@ import CoreText
 
 let workspace = URL(fileURLWithPath: FileManager.default.currentDirectoryPath)
 let fontURL = workspace.appendingPathComponent("Potential Scanner/Resources/Fonts/Sam3KRFont.ttf")
-let outputURL = workspace.appendingPathComponent("Brand/yowenom-studio-logo.png")
+let outputURL = workspace.appendingPathComponent("Brand/yowenomo-studio-logo.png")
 
 guard CTFontManagerRegisterFontsForURL(fontURL as CFURL, .process, nil) else {
     fputs("Could not register Sam3KRFont.ttf\n", stderr)
@@ -23,7 +23,7 @@ image.lockFocus()
 NSColor.clear.setFill()
 NSRect(origin: .zero, size: canvasSize).fill()
 
-let phrase = "yowenom studio"
+let phrase = "yowenomo studio"
 let paragraph = NSMutableParagraphStyle()
 paragraph.alignment = .center
 
