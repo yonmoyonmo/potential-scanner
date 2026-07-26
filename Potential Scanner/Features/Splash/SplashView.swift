@@ -13,16 +13,21 @@ struct SplashView: View {
     @State private var isVisible = false
 
     var body: some View {
-        ZStack {
-            PSColor.background.ignoresSafeArea()
+        GeometryReader { proxy in
+            ZStack {
+                PSColor.background.ignoresSafeArea()
 
-            Image("logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 200)
-                .opacity(isVisible ? 1 : 0)
-                .scaleEffect(isVisible ? 1 : 0.92)
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    // 로고는 항상 화면 가로폭의 90%
+                    .frame(width: proxy.size.width * 0.9)
+                    .opacity(isVisible ? 1 : 0)
+                    .scaleEffect(isVisible ? 1 : 0.92)
+                    .frame(width: proxy.size.width, height: proxy.size.height)
+            }
         }
+        .ignoresSafeArea()
         .onAppear {
             withAnimation(.easeOut(duration: 0.5)) {
                 isVisible = true

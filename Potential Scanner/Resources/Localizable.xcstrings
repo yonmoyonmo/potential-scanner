@@ -43,6 +43,18 @@
             "state": "translated",
             "value": "%1$@, 불리한 상성을 전투력으로 뒤집었다!"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ overturned a bad matchup with raw power!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ が不利な相性を戦闘力で覆した！"
+          }
         }
       }
     },
@@ -53,6 +65,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "상성은 %2$@에게 있었으나 %1$@의 힘이 앞섰다!"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The type edge was %2$@'s, but %1$@'s power won out!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相性は %2$@ にあったが、%1$@ の力が上回った！"
           }
         }
       }
@@ -65,6 +89,18 @@
             "state": "translated",
             "value": "%1$@, 상성 열세를 정면 돌파했다!"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ powered straight through the type disadvantage!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ が相性の不利を正面から突破した！"
+          }
         }
       }
     },
@@ -75,6 +111,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "%1$@, %2$@에게 효과적이었다!"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ was super effective against %2$@!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ は %2$@ に効果抜群だった！"
           }
         }
       }
@@ -87,6 +135,18 @@
             "state": "translated",
             "value": "%1$@의 속성이 %2$@에게 제대로 통했다!"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@'s type landed perfectly on %2$@!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ の属性が %2$@ にしっかり通用した！"
+          }
         }
       }
     },
@@ -97,6 +157,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "상성 우위! %1$@, %2$@ 상대로 우세했다."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type advantage! %1$@ had the edge over %2$@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相性有利！%1$@ が %2$@ 相手に優勢だった。"
           }
         }
       }
@@ -109,6 +181,18 @@
             "state": "translated",
             "value": "%1$@, %2$@ 앞에서 기세를 올렸다!"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ surged with momentum against %2$@!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ が %2$@ を前に勢いづいた！"
+          }
         }
       }
     },
@@ -119,6 +203,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "%1$@의 기운이 %2$@에게 강하게 작용했다!"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@'s aura hit %2$@ hard!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ の気が %2$@ に強く作用した！"
           }
         }
       }
@@ -131,6 +227,18 @@
             "state": "translated",
             "value": "%1$@, %2$@ 상대로는 천적이나 다름없었다!"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To %2$@, %1$@ was practically a natural predator!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$@ にとって %1$@ はまさに天敵だった！"
+          }
         }
       }
     },
@@ -141,6 +249,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "판정 불가 — 스캐너가 %1$@의 손을 어정쩡하게 들어줬다."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Too close to call — the scanner awkwardly raised %1$@'s hand."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "判定不能——スキャナーが微妙に %1$@ に軍配を上げた。"
           }
         }
       }
@@ -153,6 +273,18 @@
             "state": "translated",
             "value": "무승부지만 스캐너 기분상 %1$@의 승리로 한다."
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It's a draw, but the scanner feels like calling it for %1$@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "引き分けだが、スキャナーの気分で %1$@ の勝ちとする。"
+          }
         }
       }
     },
@@ -163,6 +295,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "우열을 가릴 수 없어 %1$@ 쪽으로 대충 기울었다."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No clear winner, so it just leaned toward %1$@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "優劣がつかず、なんとなく %1$@ に傾いた。"
           }
         }
       }
@@ -175,6 +319,18 @@
             "state": "translated",
             "value": "승자는 %1$@!"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The winner is %1$@!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "勝者は %1$@！"
+          }
         }
       }
     },
@@ -185,6 +341,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "%1$@, 이번 판을 가져갔다!"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ took this round!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ がこの勝負を取った！"
           }
         }
       }
@@ -197,6 +365,18 @@
             "state": "translated",
             "value": "%1$@의 승리로 종료."
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It ends in %1$@'s victory."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ の勝利で終了。"
+          }
         }
       }
     },
@@ -207,6 +387,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "%1$@, 상대를 제압했다!"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ overpowered the opponent!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ が相手を制した！"
           }
         }
       }
@@ -219,6 +411,18 @@
             "state": "translated",
             "value": "이번 대결의 주인공은 %1$@!"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The star of this duel is %1$@!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今回の対決の主役は %1$@！"
+          }
         }
       }
     },
@@ -229,6 +433,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "%1$@, 여유롭게 승리를 챙겼다!"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ claimed the win with ease!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ が余裕で勝利をものにした！"
           }
         }
       }
@@ -241,6 +457,18 @@
             "state": "translated",
             "value": "스캐너 판정 결과 — %1$@ 우세승."
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanner's verdict — %1$@ wins by a margin."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スキャナー判定——%1$@ の優勢勝ち。"
+          }
         }
       }
     },
@@ -251,6 +479,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "%1$@, 오늘은 이쪽이 한 수 위였다."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today, %1$@ was a cut above."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日は %1$@ が一枚上手だった。"
           }
         }
       }
@@ -263,6 +503,18 @@
             "state": "translated",
             "value": "본 결과는 어떠한 과학적 근거도 없습니다."
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "These results have no scientific basis whatsoever."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この結果には一切の科学的根拠がありません。"
+          }
         }
       }
     },
@@ -273,6 +525,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "재측정 시 다른 결과가 나올 수 있으며, 그것도 딱히 맞다고 볼 수 없습니다."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A re-scan may give different results, and those won't be any more correct."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再測定すると別の結果が出ることがありますが、それも特に正しいとは言えません。"
           }
         }
       }
@@ -285,6 +549,18 @@
             "state": "translated",
             "value": "스캐너는 지금 이 순간에도 자신의 판정을 의심하고 있습니다."
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Even now, the scanner is doubting its own verdict."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スキャナーは今この瞬間も自らの判定を疑っています。"
+          }
         }
       }
     },
@@ -295,6 +571,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 결과에 대한 이의제기는 받지 않습니다."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No objections to these results will be accepted."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この結果への異議は受け付けません。"
           }
         }
       }
@@ -307,6 +595,18 @@
             "state": "translated",
             "value": "여러모로 평범함의 끝판왕이라는 평가"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Widely regarded as the ultimate embodiment of ordinary"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あらゆる意味で平凡の極みという評価"
+          }
         }
       }
     },
@@ -317,6 +617,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "정작 본인은 특별해지고 싶어하는 경향이 있음"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yet secretly wants to be special"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本人はむしろ特別になりたがる傾向"
           }
         }
       }
@@ -329,6 +641,18 @@
             "state": "translated",
             "value": "각성 시 반경 1m 이내 온도가 미세하게 상승할 수 있음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "May slightly raise the temperature within 1m when awakened"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "覚醒時、半径1m以内の温度がわずかに上がることがある"
+          }
         }
       }
     },
@@ -339,6 +663,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "본인은 절대 뜨겁지 않다고 주장할 가능성이 높음"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Likely to insist it's not hot at all"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本人は決して熱くないと主張する可能性が高い"
           }
         }
       }
@@ -351,6 +687,18 @@
             "state": "translated",
             "value": "형태를 계속 바꾸면서도 본질은 그대로인 것으로 추정"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to keep changing shape while staying fundamentally the same"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "形を変え続けても本質はそのままと推定"
+          }
         }
       }
     },
@@ -361,6 +709,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "담기는 그릇에 따라 인상이 크게 달라지는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its impression changes a lot depending on the container it's in"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "入れる器によって印象が大きく変わる傾向"
           }
         }
       }
@@ -373,6 +733,18 @@
             "state": "translated",
             "value": "햇빛 노출 시간과 컨디션이 비례하는 경향"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its condition tends to scale with sun exposure"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日光を浴びる時間とコンディションが比例する傾向"
+          }
         }
       }
     },
@@ -383,6 +755,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "정전기가 유독 잘 붙는 체질로 추정"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to attract static electricity unusually well"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "静電気が特につきやすい体質と推定"
           }
         }
       }
@@ -395,6 +779,18 @@
             "state": "translated",
             "value": "본체와 실제 성격이 정반대일 확률 78%"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "78% chance its true personality is the opposite of how it looks"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本体と実際の性格が正反対の確率78%"
+          }
         }
       }
     },
@@ -405,6 +801,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "감정 표현이 늦게 도착하는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its emotional expressions tend to arrive late"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "感情表現が遅れて届く傾向"
           }
         }
       }
@@ -417,6 +825,18 @@
             "state": "translated",
             "value": "말보다 행동이 먼저 나가는 경향"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tends to act before speaking"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "言葉より行動が先に出る傾向"
+          }
         }
       }
     },
@@ -427,6 +847,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "근처에 두면 다른 개체가 긴장하는 경향"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nearby specimens tend to tense up around it"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "近くに置くと他の個体が緊張する傾向"
           }
         }
       }
@@ -439,6 +871,18 @@
             "state": "translated",
             "value": "이동 시 미세한 진동이 감지됨 (신경 쓰지 않아도 됨)"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faint vibrations detected when moving (nothing to worry about)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "移動時に微細な振動を検知（気にしなくてよい）"
+          }
         }
       }
     },
@@ -449,6 +893,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "뿌리 내림 본능이 남아있는 것으로 추정"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to retain an instinct to put down roots"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "根を張る本能が残っていると推定"
           }
         }
       }
@@ -461,6 +917,18 @@
             "state": "translated",
             "value": "존재감이 약할수록 전투력이 높아지는 역설적 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A paradoxical type: the fainter its presence, the higher its power"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "存在感が薄いほど戦闘力が上がる逆説的なタイプ"
+          }
         }
       }
     },
@@ -471,6 +939,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "잘 안 잡히는데 잡히면 꽤 셈"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hard to pin down, but pretty strong once you do"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "捕まえにくいが、捕まえるとかなり強い"
           }
         }
       }
@@ -483,6 +963,18 @@
             "state": "translated",
             "value": "측정 장비 오류인지 실제 데이터인지 구분 불가"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can't tell if it's an equipment error or real data"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測定機器のエラーか実データか判別不能"
+          }
         }
       }
     },
@@ -493,6 +985,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "재측정 시 결과가 달라질 수 있음 (정상 아님)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Results may change on a re-scan (not normal)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再測定で結果が変わることがある（正常ではない）"
           }
         }
       }
@@ -505,6 +1009,18 @@
             "state": "translated",
             "value": "작아 보여도 무리 지으면 무시 못할 수치가 나옴"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Looks small, but in a group the numbers aren't to be ignored"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "小さく見えても群れると無視できない数値が出る"
+          }
         }
       }
     },
@@ -515,6 +1031,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "빛 반사가 유독 잘 되는 표면으로 추정"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to have an unusually reflective surface"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "光を特によく反射する表面と推定"
           }
         }
       }
@@ -527,6 +1055,18 @@
             "state": "translated",
             "value": "예상보다 오래 버티는 내구도를 지님"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Has more endurance than expected"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予想より長く持ちこたえる耐久力を持つ"
+          }
         }
       }
     },
@@ -537,6 +1077,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "사진에 본인만 흐릿하게 나오는 경우가 있음"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sometimes it alone comes out blurry in photos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真で本人だけがぼやけて写ることがある"
           }
         }
       }
@@ -549,6 +1101,18 @@
             "state": "translated",
             "value": "말은 없는데 이상하게 위압감이 있음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Says nothing, yet strangely intimidating"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無口なのに妙な威圧感がある"
+          }
         }
       }
     },
@@ -559,6 +1123,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "그림자가 유독 진하게 잡히는 경향"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its shadow tends to register unusually dark"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "影が特に濃く出る傾向"
           }
         }
       }
@@ -571,6 +1147,18 @@
             "state": "translated",
             "value": "겉보기와 다르게 예상보다 단단함"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sturdier than it looks"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見た目と違って予想より硬い"
+          }
         }
       }
     },
@@ -581,6 +1169,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "부딪히면 이쪽이 아플 수 있음"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bumping into it might hurt you more"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ぶつかるとこちらが痛いかもしれない"
           }
         }
       }
@@ -593,6 +1193,18 @@
             "state": "translated",
             "value": "꿈에 나올 확률이 평균보다 높음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Above-average odds of showing up in your dreams"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夢に出る確率が平均より高い"
+          }
         }
       }
     },
@@ -603,6 +1215,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "복잡한 것보다 단순 반복에 강한 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Better at simple repetition than complex tasks"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複雑なことより単純な反復に強い傾向"
           }
         }
       }
@@ -615,6 +1239,18 @@
             "state": "translated",
             "value": "가까이 있으면 은근히 영향을 받는 것으로 추정"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to quietly affect whatever's nearby"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "近くにあると密かに影響を受けると推定"
+          }
         }
       }
     },
@@ -625,6 +1261,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "직접 나서지 않아도 상황이 알아서 풀리는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Things tend to work out without it having to step in"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自ら動かなくても状況が勝手に片づく傾向"
           }
         }
       }
@@ -637,6 +1285,18 @@
             "state": "translated",
             "value": "본모습이 하나로 고정되지 않는 것으로 추정"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to have no single fixed true form"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本来の姿が一つに定まらないと推定"
+          }
         }
       }
     },
@@ -647,6 +1307,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "분류 기준 자체를 다시 검토해야 할 수도 있음"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Might require rethinking the classification criteria entirely"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "分類基準そのものを見直す必要があるかもしれない"
           }
         }
       }
@@ -659,6 +1331,18 @@
             "state": "translated",
             "value": "상상력이 곧 능력치인 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The type whose imagination is its stat"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "想像力がそのまま能力値になるタイプ"
+          }
         }
       }
     },
@@ -669,6 +1353,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "본인도 정확한 원리는 모르는 것으로 추정"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed not to understand its own mechanics"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本人も正確な原理は分かっていないと推定"
           }
         }
       }
@@ -681,6 +1377,18 @@
             "state": "translated",
             "value": "형태보다 존재 자체가 힘의 근원인 것으로 추정"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to draw power from mere existence rather than form"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "形よりも存在そのものが力の源と推定"
+          }
         }
       }
     },
@@ -691,6 +1399,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "평소와 결정적인 순간의 낙차가 큰 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Big gap between its everyday self and its clutch moments"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "普段と決定的な瞬間の落差が大きい傾向"
           }
         }
       }
@@ -703,6 +1423,18 @@
             "state": "translated",
             "value": "존재 자체가 기준점처럼 취급되는 경향"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its very existence tends to be treated as a reference point"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "存在そのものが基準点のように扱われる傾向"
+          }
         }
       }
     },
@@ -713,6 +1445,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "막히면 돌아가는 유연함이 수치로도 드러남"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its flexibility to reroute when blocked shows up in the numbers too"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "行き詰まると回り込む柔軟さが数値にも表れる"
           }
         }
       }
@@ -725,6 +1469,18 @@
             "state": "translated",
             "value": "평소엔 잠잠하다가 결정적 순간에 확 타오름"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quiet usually, then flares up at the decisive moment"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "普段は静かで、決定的な瞬間に一気に燃え上がる"
+          }
         }
       }
     },
@@ -735,6 +1491,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "지나간 자리에만 흔적이 남는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leaves traces only where it has passed"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通り過ぎた跡にだけ痕跡が残る傾向"
           }
         }
       }
@@ -747,6 +1515,18 @@
             "state": "translated",
             "value": "쉽게 안 움직이는데 한번 움직이면 확실함"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hard to get moving, but decisive once it does"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "簡単には動かないが、一度動くと確実"
+          }
         }
       }
     },
@@ -757,6 +1537,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "느긋해 보이다가 한순간에 승부를 내는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Looks laid-back, then settles it in an instant"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "のんびりして見えて一瞬で勝負を決める傾向"
           }
         }
       }
@@ -769,6 +1561,18 @@
             "state": "translated",
             "value": "부드러운 인상과 실측값 사이 괴리가 상당함"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Big gap between its gentle impression and the measured values"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "柔らかい印象と実測値の間の乖離がかなり大きい"
+          }
         }
       }
     },
@@ -779,6 +1583,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "예측하기 어려운 궤적을 그리는 경향"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tends to trace an unpredictable trajectory"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予測しにくい軌跡を描く傾向"
           }
         }
       }
@@ -791,6 +1607,18 @@
             "state": "translated",
             "value": "존재감이 흐릿한데 막상 놓치면 곤란한 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faint presence, yet you're in trouble if you lose track of it"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "存在感は薄いが、いざ見失うと困るタイプ"
+          }
         }
       }
     },
@@ -801,6 +1629,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "리듬이 깨지면 컨디션도 같이 흔들리는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its condition wobbles when its rhythm breaks"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リズムが崩れるとコンディションも一緒に揺らぐ傾向"
           }
         }
       }
@@ -813,6 +1653,18 @@
             "state": "translated",
             "value": "작은 빈틈을 놓치지 않는 예리함이 측정됨"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Measured to have a sharpness that misses no small opening"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "小さな隙を見逃さない鋭さが測定された"
+          }
         }
       }
     },
@@ -823,6 +1675,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "설명은 못 해도 결과는 내는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can't explain it, but gets results"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "説明はできなくても結果は出す傾向"
           }
         }
       }
@@ -835,6 +1699,18 @@
             "state": "translated",
             "value": "겉모습과 달리 쉽게 꺾이지 않는 것으로 측정됨"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Measured to be harder to break than it looks"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見た目と違って簡単には折れないと測定"
+          }
         }
       }
     },
@@ -845,6 +1721,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "정통이라 부르기도, 아니라 부르기도 애매한 케이스"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hard to call it orthodox, or not — an in-between case"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正統と呼ぶにも否定するにも微妙なケース"
           }
         }
       }
@@ -857,6 +1745,18 @@
             "state": "translated",
             "value": "평소보다 흥분했을 때 측정치가 확실히 오름"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its readings clearly rise when it's more excited than usual"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "普段より興奮すると測定値が確実に上がる"
+          }
         }
       }
     },
@@ -867,6 +1767,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "막아서면 오히려 우회로를 찾아내는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Block it and it just finds a way around"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "立ちふさがるとむしろ迂回路を見つける傾向"
           }
         }
       }
@@ -879,6 +1791,18 @@
             "state": "translated",
             "value": "스치기만 해도 흔적이 남는 경향"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tends to leave a mark from just a graze"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かすっただけでも痕が残る傾向"
+          }
         }
       }
     },
@@ -889,6 +1813,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "느린 듯 보여도 결정적 순간엔 따라잡기 힘듦"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Looks slow, but hard to catch at the decisive moment"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "遅く見えても決定的な瞬間には追いつきにくい"
           }
         }
       }
@@ -901,6 +1837,18 @@
             "state": "translated",
             "value": "기반이 단단해서 쉽게 흔들리지 않는 편"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solid foundation, not easily shaken"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "基盤が固く、簡単には揺るがない傾向"
+          }
         }
       }
     },
@@ -911,6 +1859,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "차갑고 날카로운 인상이 수치에도 그대로 반영됨"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its cold, sharp impression carries straight into the numbers"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "冷たく鋭い印象が数値にもそのまま反映される"
           }
         }
       }
@@ -923,6 +1883,18 @@
             "state": "translated",
             "value": "가만히 있어도 영향력이 계속 뻗어나가는 편"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its influence keeps spreading even while it stays still"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "じっとしていても影響力が広がり続ける傾向"
+          }
         }
       }
     },
@@ -933,6 +1905,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "느리지만 되돌릴 수 없는 변화를 일으킴"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Causes slow but irreversible change"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "遅いが、取り返しのつかない変化を起こす"
           }
         }
       }
@@ -945,6 +1929,18 @@
             "state": "translated",
             "value": "순간적인 임팩트에 특화된 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A type specialized in momentary impact"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瞬間的なインパクトに特化したタイプ"
+          }
         }
       }
     },
@@ -955,6 +1951,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "본인 의사와 무관하게 뭔가를 자꾸 끌어들이는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keeps pulling things in, regardless of its own will"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本人の意思とは無関係に何かを引き寄せ続ける傾向"
           }
         }
       }
@@ -967,6 +1975,18 @@
             "state": "translated",
             "value": "투명해서 방심하기 쉬우나 실제론 꽤 위협적"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transparent enough to underestimate, but actually quite a threat"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "透明で油断しやすいが、実際はかなり脅威的"
+          }
         }
       }
     },
@@ -977,6 +1997,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "본인은 평범하다고 생각할 수 있으나 스캐너 판단은 다름"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It may think of itself as ordinary, but the scanner disagrees"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本人は平凡だと思っているかもしれないが、スキャナーの判断は違う"
           }
         }
       }
@@ -989,6 +2021,18 @@
             "state": "translated",
             "value": "각성 조건: 아직 스스로도 인지하지 못한 것으로 추정"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Awakening condition: presumed still unknown even to itself"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "覚醒条件：本人もまだ自覚していないと推定"
+          }
         }
       }
     },
@@ -999,6 +2043,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "잠재력이 억눌려 있던 기간이 길수록 각성 시 폭발력이 큼"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The longer its potential was suppressed, the bigger the burst on awakening"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "潜在力が抑えられていた期間が長いほど、覚醒時の爆発力が大きい"
           }
         }
       }
@@ -1011,6 +2067,18 @@
             "state": "translated",
             "value": "지금 이 상태가 진짜 한계인지는 아직 검증되지 않음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Whether this is truly its limit hasn't been verified yet"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今の状態が本当の限界かはまだ検証されていない"
+          }
         }
       }
     },
@@ -1021,6 +2089,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "예상치 못한 순간 각성할 가능성을 배제할 수 없음"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can't rule out awakening at an unexpected moment"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "予想外の瞬間に覚醒する可能性は排除できない"
           }
         }
       }
@@ -1033,6 +2113,18 @@
             "state": "translated",
             "value": "겉보기와 실측 수치 사이의 괴리가 상당함"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Considerable gap between its appearance and its measured values"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見た目と実測値の乖離がかなり大きい"
+          }
         }
       }
     },
@@ -1043,6 +2135,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "미확인 에너지 파동 감지 중..."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Detecting unidentified energy waves..."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未確認エネルギー波を検知中..."
           }
         }
       }
@@ -1055,6 +2159,18 @@
             "state": "translated",
             "value": "잠재 계수 역산 중..."
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back-calculating potential coefficient..."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "潜在係数を逆算中..."
+          }
         }
       }
     },
@@ -1065,6 +2181,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "존재감 밀도 측정 중..."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Measuring presence density..."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "存在感密度を測定中..."
           }
         }
       }
@@ -1077,6 +2205,18 @@
             "state": "translated",
             "value": "기 에너지 잔여값 추정 중..."
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimating residual chi energy..."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "気エネルギーの残量を推定中..."
+          }
         }
       }
     },
@@ -1087,6 +2227,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "각성 조건 역추적 중..."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tracing awakening conditions..."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "覚醒条件を逆追跡中..."
           }
         }
       }
@@ -1099,6 +2251,18 @@
             "state": "translated",
             "value": "표면 진동 주파수 분석 중..."
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analyzing surface vibration frequency..."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "表面振動の周波数を分析中..."
+          }
         }
       }
     },
@@ -1109,6 +2273,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "잠재 에너지 파동을 3중 적분하여 산출"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Derived by triple-integrating potential energy waves"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "潜在エネルギー波を三重積分して算出"
           }
         }
       }
@@ -1121,6 +2297,18 @@
             "state": "translated",
             "value": "동공 반사율과 배경 조도의 상관관계 분석 결과"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "From analyzing the correlation between pupil reflectance and background lighting"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "瞳孔反射率と背景照度の相関を分析した結果"
+          }
         }
       }
     },
@@ -1131,6 +2319,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "미세 진동 주파수를 전투력 지수로 환산"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Converted micro-vibration frequency into a power index"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "微細振動の周波数を戦闘力指数に換算"
           }
         }
       }
@@ -1143,6 +2343,18 @@
             "state": "translated",
             "value": "존재감 밀도 × 각성 계수 보정값"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presence density × awakening-coefficient correction"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "存在感密度 × 覚醒係数の補正値"
+          }
         }
       }
     },
@@ -1153,6 +2365,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "촬영 각도 보정 후 잔여 기 에너지 추정치"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estimated residual chi energy after correcting for capture angle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "撮影角度を補正した後の残余気エネルギー推定値"
           }
         }
       }
@@ -1165,6 +2389,18 @@
             "state": "translated",
             "value": "표면 온도 편차를 역산한 잠재 출력"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Latent output back-calculated from surface temperature deviation"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "表面温度の偏差から逆算した潜在出力"
+          }
         }
       }
     },
@@ -1175,6 +2411,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "양자얽힘 보정 후 존재 오차값 반영"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reflecting existence-error after quantum-entanglement correction"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "量子もつれ補正後の存在誤差値を反映"
           }
         }
       }
@@ -1187,6 +2435,18 @@
             "state": "translated",
             "value": "스캐너 자체 판단으로 인한 자의적 가중치 포함 (비공개)"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Includes arbitrary weighting by the scanner's own judgment (undisclosed)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スキャナー独自の判断による恣意的な重み付けを含む（非公開）"
+          }
         }
       }
     },
@@ -1197,6 +2457,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "근처 자기장 왜곡 정도를 전투력으로 환산"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Converted nearby magnetic-field distortion into power"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "近くの磁場の歪みを戦闘力に換算"
           }
         }
       }
@@ -1209,6 +2481,18 @@
             "state": "translated",
             "value": "측정 3회 평균이 아닌 가장 그럴듯한 값 채택"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not the average of 3 readings, but whichever value seemed most plausible"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3回の測定平均ではなく、最もそれらしい値を採用"
+          }
         }
       }
     },
@@ -1219,6 +2503,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "사실 그냥 감으로 때렸으나 자신감은 100%"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Honestly just a gut guess, but with 100% confidence"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "実は勘で出したが自信は100%"
           }
         }
       }
@@ -1231,6 +2527,18 @@
             "state": "translated",
             "value": "복잡한 계산을 한 척하기 위한 계산"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A calculation done to look like a complex calculation was done"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "複雑な計算をしたふりをするための計算"
+          }
         }
       }
     },
@@ -1241,6 +2549,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 수치의 산출 근거는 스캐너도 설명하고 싶어하지 않음"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Even the scanner would rather not explain how this number came about"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この数値の算出根拠は、スキャナーも説明したがらない"
           }
         }
       }
@@ -1253,6 +2573,18 @@
             "state": "translated",
             "value": "측정자의 그날 컨디션이 은근히 반영된 값"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A value that subtly reflects the operator's mood that day"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測定者のその日のコンディションが密かに反映された値"
+          }
         }
       }
     },
@@ -1263,6 +2595,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "우주적 우연이 여러 번 겹친 결과로 추정"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to be the result of several cosmic coincidences"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "宇宙的な偶然が何度も重なった結果と推定"
           }
         }
       }
@@ -1275,6 +2619,18 @@
             "state": "translated",
             "value": "결과에 이의가 있다면 재측정을 권장하나 달라지지 않을 확률 높음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you dispute the result, a re-scan is recommended, though it probably won't change"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "結果に異議があれば再測定を勧めるが、変わらない可能性が高い"
+          }
         }
       }
     },
@@ -1285,6 +2641,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "돌다리도 두드리고 또 두드리는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Double-checks the safe bridge, then checks it again"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "石橋を叩いて、さらにもう一度叩くタイプ"
           }
         }
       }
@@ -1297,6 +2665,18 @@
             "state": "translated",
             "value": "A형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type A"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A型"
+          }
         }
       }
     },
@@ -1307,6 +2687,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "본인도 종잡을 수 없다고 인정하는 유형"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Even admits it can't figure itself out"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分でも掴みどころがないと認めるタイプ"
           }
         }
       }
@@ -1319,6 +2711,18 @@
             "state": "translated",
             "value": "AB형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type AB"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AB型"
+          }
         }
       }
     },
@@ -1329,6 +2733,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "규칙보다 그때 기분이 우선인 유형"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prioritizes the mood of the moment over the rules"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ルールよりその時の気分が優先のタイプ"
           }
         }
       }
@@ -1341,6 +2757,18 @@
             "state": "translated",
             "value": "B형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type B"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "B型"
+          }
         }
       }
     },
@@ -1351,6 +2779,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "낯가림 수치가 유독 낮게 측정됨"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Measured with unusually low shyness"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "人見知り値が特に低く測定される"
           }
         }
       }
@@ -1363,6 +2803,18 @@
             "state": "translated",
             "value": "O형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type O"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O型"
+          }
         }
       }
     },
@@ -1373,6 +2825,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "이론보다 감각이 앞서는 자기유파 스타일"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A self-taught style where instinct leads theory"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "理論より感覚が先行する自己流スタイル"
           }
         }
       }
@@ -1385,6 +2849,18 @@
             "state": "translated",
             "value": "짐승의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beast Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "獣の呼吸"
+          }
         }
       }
     },
@@ -1395,6 +2871,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "일정 온도 이상에서만 진가가 드러나는 유형"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows its true worth only above a certain temperature"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一定の温度以上でのみ真価を発揮するタイプ"
           }
         }
       }
@@ -1407,6 +2895,18 @@
             "state": "translated",
             "value": "불의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flame Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "炎の呼吸"
+          }
         }
       }
     },
@@ -1417,6 +2917,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "화려해 보이지만 은근히 근성이 있는 유형"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Looks flashy, but quietly gritty"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "華やかに見えて、意外と根性があるタイプ"
           }
         }
       }
@@ -1429,6 +2941,18 @@
             "state": "translated",
             "value": "꽃의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flower Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "花の呼吸"
+          }
         }
       }
     },
@@ -1439,6 +2963,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "정면 대결보다 급소를 노리는 방식을 선호하는 경향"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prefers striking vital points over head-on clashes"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正面対決より急所を狙う方法を好む傾向"
           }
         }
       }
@@ -1451,6 +2987,18 @@
             "state": "translated",
             "value": "벌레의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Insect Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蟲の呼吸"
+          }
         }
       }
     },
@@ -1461,6 +3009,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "위협적으로 안 보이는데 수치는 상위권"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doesn't look threatening, but ranks near the top"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "脅威的に見えないのに数値は上位"
           }
         }
       }
@@ -1473,6 +3033,18 @@
             "state": "translated",
             "value": "사랑의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Love Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恋の呼吸"
+          }
         }
       }
     },
@@ -1483,6 +3055,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "정확한 윤곽을 잡기 어려운 것으로 측정됨"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Measured to have hard-to-define outlines"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "正確な輪郭を捉えにくいと測定される"
           }
         }
       }
@@ -1495,6 +3079,18 @@
             "state": "translated",
             "value": "안개의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mist Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "霞の呼吸"
+          }
         }
       }
     },
@@ -1505,6 +3101,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "본류와 궤를 달리하는 이단적 흐름으로 추정"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to be a heretical current apart from the mainstream"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本流とは軌を異にする異端の流れと推定"
           }
         }
       }
@@ -1517,6 +3125,18 @@
             "state": "translated",
             "value": "달의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moon Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "月の呼吸"
+          }
         }
       }
     },
@@ -1527,6 +3147,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "직선이 아닌 경로로 움직일 때 효율이 오히려 좋아짐"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Actually more efficient when it moves in non-straight paths"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直線でない経路で動く方がむしろ効率が上がる"
           }
         }
       }
@@ -1539,6 +3171,18 @@
             "state": "translated",
             "value": "뱀의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serpent Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蛇の呼吸"
+          }
         }
       }
     },
@@ -1549,6 +3193,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "박자를 세는 습관이 있는 것으로 추정"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to have a habit of counting the beat"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拍子を数える癖があると推定"
           }
         }
       }
@@ -1561,6 +3217,18 @@
             "state": "translated",
             "value": "소리의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sound Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "音の呼吸"
+          }
         }
       }
     },
@@ -1571,6 +3239,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "겉보기보다 훨씬 무거운 하중을 견디는 것으로 측정됨"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Measured to bear far heavier loads than it looks"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見た目よりはるかに重い荷重に耐えると測定される"
           }
         }
       }
@@ -1583,6 +3263,18 @@
             "state": "translated",
             "value": "돌의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stone Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "岩の呼吸"
+          }
         }
       }
     },
@@ -1593,6 +3285,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "모든 유파의 원류라는 소문이 있으나 본인은 전혀 자각하지 못함"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rumored to be the origin of all styles, though it has no idea"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全流派の源流という噂があるが、本人は全く自覚していない"
           }
         }
       }
@@ -1605,6 +3309,18 @@
             "state": "translated",
             "value": "해의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sun Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "日の呼吸"
+          }
         }
       }
     },
@@ -1615,6 +3331,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "반응 속도가 순간적으로 급상승하는 구간이 존재함"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Has bursts where its reaction speed spikes momentarily"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "反応速度が瞬間的に急上昇する区間が存在する"
           }
         }
       }
@@ -1627,6 +3355,18 @@
             "state": "translated",
             "value": "벼락의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thunder Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "雷の呼吸"
+          }
         }
       }
     },
@@ -1637,6 +3377,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "형태를 계속 바꾸는데 흐름 자체는 일정하게 유지됨"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keeps changing shape, yet its flow stays constant"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "形を変え続けるが、流れ自体は一定に保たれる"
           }
         }
       }
@@ -1649,6 +3401,18 @@
             "state": "translated",
             "value": "물의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Water Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "水の呼吸"
+          }
         }
       }
     },
@@ -1659,6 +3423,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "움직임의 시작과 끝을 포착하기 어려움"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hard to catch the start and end of its movement"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "動きの始まりと終わりを捉えにくい"
           }
         }
       }
@@ -1671,6 +3447,18 @@
             "state": "translated",
             "value": "바람의 호흡"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wind Breathing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "風の呼吸"
+          }
         }
       }
     },
@@ -1681,6 +3469,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "숨어있을 때와 드러났을 때의 수치 차이가 큼"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Big difference in its numbers between hidden and exposed"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隠れている時と現れた時の数値差が大きい"
           }
         }
       }
@@ -1693,6 +3493,18 @@
             "state": "translated",
             "value": "토둔"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Earth Release"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "土遁"
+          }
         }
       }
     },
@@ -1703,6 +3515,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "예술적인 이유로 격렬해지는 경우가 있음"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sometimes goes intense for artistic reasons"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "芸術的な理由で激しくなることがある"
           }
         }
       }
@@ -1715,6 +3539,18 @@
             "state": "translated",
             "value": "폭둔"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explosion Release"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "爆遁"
+          }
         }
       }
     },
@@ -1725,6 +3561,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "감정 기복과 수치 변동이 비례하는 경향"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its readings tend to swing with its mood"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "感情の起伏と数値の変動が比例する傾向"
           }
         }
       }
@@ -1737,6 +3585,18 @@
             "state": "translated",
             "value": "화둔"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fire Release"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "火遁"
+          }
         }
       }
     },
@@ -1747,6 +3607,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "두 가지 성질이 동시에 존재하는 것으로 추정 (원리 불명)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to hold two properties at once (mechanism unknown)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "二つの性質が同時に存在すると推定（原理不明）"
           }
         }
       }
@@ -1759,6 +3631,18 @@
             "state": "translated",
             "value": "빙둔"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ice Release"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "氷遁"
+          }
         }
       }
     },
@@ -1769,6 +3653,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "닿는 것마다 서서히 무너뜨리는 경향"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tends to slowly break down whatever it touches"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "触れるものを徐々に崩していく傾向"
           }
         }
       }
@@ -1781,6 +3677,18 @@
             "state": "translated",
             "value": "용둔"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lava Release"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "溶遁"
+          }
         }
       }
     },
@@ -1791,6 +3699,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "반응 속도가 예측 범위를 벗어나는 순간이 있음"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its reaction speed sometimes exceeds all prediction"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "反応速度が予測範囲を超える瞬間がある"
           }
         }
       }
@@ -1803,6 +3723,18 @@
             "state": "translated",
             "value": "뇌둔"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lightning Release"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "雷遁"
+          }
         }
       }
     },
@@ -1813,6 +3745,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "주변 금속류를 끌어당기는 사례가 보고됨"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reports of it attracting nearby metals"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "周囲の金属類を引き寄せる事例が報告されている"
           }
         }
       }
@@ -1825,6 +3769,18 @@
             "state": "translated",
             "value": "자둔"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Magnet Release"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "磁遁"
+          }
         }
       }
     },
@@ -1835,6 +3791,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "겉보기와 다르게 절단면이 예리한 것으로 측정됨"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Measured to have a sharper cutting edge than it looks"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見た目と違って切断面が鋭いと測定される"
           }
         }
       }
@@ -1847,6 +3815,18 @@
             "state": "translated",
             "value": "초자둔"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Super Magnet Release"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "超磁遁"
+          }
         }
       }
     },
@@ -1857,6 +3837,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "형태를 유지하다가도 필요하면 순식간에 흩어짐"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Holds its shape, then scatters in an instant when needed"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "形を保っていても、必要なら一瞬で散る"
           }
         }
       }
@@ -1869,6 +3861,18 @@
             "state": "translated",
             "value": "수둔"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Water Release"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "水遁"
+          }
         }
       }
     },
@@ -1879,6 +3883,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "칼날처럼 예리한 궤적을 그리는 것으로 측정됨"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Measured to trace a blade-sharp trajectory"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刃のように鋭い軌跡を描くと測定される"
           }
         }
       }
@@ -1891,6 +3907,18 @@
             "state": "translated",
             "value": "풍둔"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wind Release"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "風遁"
+          }
         }
       }
     },
@@ -1901,6 +3929,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "성장 속도가 비정상적으로 빠른 것으로 측정됨"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Measured to grow abnormally fast"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "成長速度が異常に速いと測定される"
           }
         }
       }
@@ -1913,6 +3953,18 @@
             "state": "translated",
             "value": "목둔"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wood Release"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "木遁"
+          }
         }
       }
     },
@@ -1923,6 +3975,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "남들과 다른 방식으로 접근하는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Approaches things differently from everyone else"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "人とは違う方法でアプローチする傾向"
           }
         }
       }
@@ -1935,6 +3999,18 @@
             "state": "translated",
             "value": "물병자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aquarius"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "水瓶座"
+          }
         }
       }
     },
@@ -1945,6 +4021,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "일단 부딪혀보고 생각하는 편"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tends to charge in first and think later"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "とりあえずぶつかってから考える傾向"
           }
         }
       }
@@ -1957,6 +4045,18 @@
             "state": "translated",
             "value": "양자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aries"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "牡羊座"
+          }
         }
       }
     },
@@ -1967,6 +4067,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "겉은 단단, 속은 의외로 여린 유형"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hard on the outside, surprisingly tender inside"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "外は硬く、中は意外ともろいタイプ"
           }
         }
       }
@@ -1979,6 +4091,18 @@
             "state": "translated",
             "value": "게자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancer"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蟹座"
+          }
         }
       }
     },
@@ -1989,6 +4113,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "당장 티는 안 나도 꾸준히 쌓이는 유형"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doesn't show right away, but steadily builds up"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すぐには目立たなくても着実に積み上げるタイプ"
           }
         }
       }
@@ -2001,6 +4137,18 @@
             "state": "translated",
             "value": "염소자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capricorn"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "山羊座"
+          }
         }
       }
     },
@@ -2011,6 +4159,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "겉과 속이 다르게 측정되는 경우가 있음"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sometimes measures differently outside vs inside"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "外と中が違って測定されることがある"
           }
         }
       }
@@ -2023,6 +4183,18 @@
             "state": "translated",
             "value": "쌍둥이자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gemini"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "双子座"
+          }
         }
       }
     },
@@ -2033,6 +4205,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "주목받는 상황에서 수치가 상승함"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its readings rise when it's in the spotlight"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "注目される状況で数値が上昇する"
           }
         }
       }
@@ -2045,6 +4229,18 @@
             "state": "translated",
             "value": "사자자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "獅子座"
+          }
         }
       }
     },
@@ -2055,6 +4251,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "어느 한쪽으로 안 치우치려는 경향"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tends to avoid leaning to either side"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "どちらか一方に偏らないようにする傾向"
           }
         }
       }
@@ -2067,6 +4275,18 @@
             "state": "translated",
             "value": "천칭자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Libra"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "天秤座"
+          }
         }
       }
     },
@@ -2077,6 +4297,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "현실과 상상의 경계가 흐릿한 유형"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The line between its reality and imagination is blurry"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現実と想像の境界が曖昧なタイプ"
           }
         }
       }
@@ -2089,6 +4321,18 @@
             "state": "translated",
             "value": "물고기자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pisces"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "魚座"
+          }
         }
       }
     },
@@ -2099,6 +4343,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "한곳에 머무르지 않는 자유로운 유형"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A free type that won't stay in one place"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一箇所に留まらない自由なタイプ"
           }
         }
       }
@@ -2111,6 +4367,18 @@
             "state": "translated",
             "value": "사수자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sagittarius"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "射手座"
+          }
         }
       }
     },
@@ -2121,6 +4389,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "결정적인 순간까지 낌새를 안 드러냄"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows no sign until the decisive moment"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "決定的な瞬間まで気配を見せない"
           }
         }
       }
@@ -2133,6 +4413,18 @@
             "state": "translated",
             "value": "전갈자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scorpio"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蠍座"
+          }
         }
       }
     },
@@ -2143,6 +4435,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "한번 자리 잡으면 좀처럼 안 움직임"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Once settled, it hardly ever moves"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一度腰を据えるとなかなか動かない"
           }
         }
       }
@@ -2155,6 +4459,18 @@
             "state": "translated",
             "value": "황소자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taurus"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "牡牛座"
+          }
         }
       }
     },
@@ -2165,6 +4481,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "디테일을 놓치지 않는 유형"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The type that misses no detail"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "細部を見逃さないタイプ"
           }
         }
       }
@@ -2177,6 +4505,18 @@
             "state": "translated",
             "value": "처녀자리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Virgo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "乙女座"
+          }
         }
       }
     },
@@ -2187,6 +4527,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "분위기와 감정 변화에 민감하게 반응하는 유형"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reacts sensitively to mood and emotional shifts"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "雰囲気や感情の変化に敏感に反応するタイプ"
           }
         }
       }
@@ -2199,6 +4551,18 @@
             "state": "translated",
             "value": "에겐"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Egen"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エゲン"
+          }
         }
       }
     },
@@ -2209,6 +4573,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "망설임 없이 밀어붙이는 유형"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pushes forward without hesitation"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ためらいなく押し進めるタイプ"
           }
         }
       }
@@ -2221,6 +4597,18 @@
             "state": "translated",
             "value": "테토"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teto"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "テト"
+          }
         }
       }
     },
@@ -2232,6 +4620,18 @@
             "state": "translated",
             "value": "본인보다 남 잠재력을 먼저 알아채는 편"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notices others' potential before its own"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分より他人の潜在力に先に気づく傾向"
+          }
         }
       }
     },
@@ -2239,6 +4639,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ENFJ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ENFJ"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ENFJ"
@@ -2254,6 +4666,18 @@
             "state": "translated",
             "value": "새로운 아이디어가 끊임없이 샘솟는 편"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New ideas keep bubbling up endlessly"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新しいアイデアが絶えず湧き出る傾向"
+          }
         }
       }
     },
@@ -2261,6 +4685,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ENFP"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ENFP"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ENFP"
@@ -2276,6 +4712,18 @@
             "state": "translated",
             "value": "일단 방향부터 정하고 보는 스타일"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sets the direction first, figures out the rest later"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "とりあえず方向から決めるスタイル"
+          }
         }
       }
     },
@@ -2283,6 +4731,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ENTJ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ENTJ"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ENTJ"
@@ -2298,6 +4758,18 @@
             "state": "translated",
             "value": "반박 거리를 찾는 속도가 유독 빠름"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unusually fast at finding a counterargument"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "反論のネタを見つける速度が特に速い"
+          }
         }
       }
     },
@@ -2305,6 +4777,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ENTP"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ENTP"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ENTP"
@@ -2320,6 +4804,18 @@
             "state": "translated",
             "value": "주변 컨디션까지 같이 체크하는 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Checks on everyone else's condition too"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "周囲のコンディションまで一緒にチェックするタイプ"
+          }
         }
       }
     },
@@ -2327,6 +4823,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ESFJ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ESFJ"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ESFJ"
@@ -2342,6 +4850,18 @@
             "state": "translated",
             "value": "분위기 수치에 가장 민감하게 반응함"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reacts most sensitively to the mood readings"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "雰囲気の数値に最も敏感に反応する"
+          }
         }
       }
     },
@@ -2349,6 +4869,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ESFP"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ESFP"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ESFP"
@@ -2364,6 +4896,18 @@
             "state": "translated",
             "value": "정리 안 된 상황을 못 견디는 편"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can't stand a disorganized situation"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "片づいていない状況に耐えられない傾向"
+          }
         }
       }
     },
@@ -2371,6 +4915,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ESTJ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ESTJ"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ESTJ"
@@ -2386,6 +4942,18 @@
             "state": "translated",
             "value": "생각보다 몸이 먼저 나가는 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its body moves before its mind does"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "考えるより体が先に出るタイプ"
+          }
         }
       }
     },
@@ -2393,6 +4961,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ESTP"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ESTP"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ESTP"
@@ -2408,6 +4988,18 @@
             "state": "translated",
             "value": "먼저 알아채고 먼저 지치는 경향"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tends to notice first and burn out first"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "先に気づいて先に疲れる傾向"
+          }
         }
       }
     },
@@ -2415,6 +5007,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INFJ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INFJ"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "INFJ"
@@ -2430,6 +5034,18 @@
             "state": "translated",
             "value": "머릿속 세계가 실측치보다 훨씬 큼"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its inner world is far bigger than the measured value"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "頭の中の世界が実測値よりはるかに大きい"
+          }
         }
       }
     },
@@ -2437,6 +5053,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INFP"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INFP"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "INFP"
@@ -2452,6 +5080,18 @@
             "state": "translated",
             "value": "이미 계획은 끝났고 실행만 남음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The plan is already done; only execution remains"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "計画はもう終わっていて、実行だけが残っている"
+          }
         }
       }
     },
@@ -2459,6 +5099,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INTJ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INTJ"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "INTJ"
@@ -2474,6 +5126,18 @@
             "state": "translated",
             "value": "결론보다 과정을 더 오래 붙잡고 있음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Holds onto the process longer than the conclusion"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "結論より過程を長く握っている"
+          }
         }
       }
     },
@@ -2481,6 +5145,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INTP"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "INTP"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "INTP"
@@ -2496,6 +5172,18 @@
             "state": "translated",
             "value": "안 보이는 곳에서 수치가 쌓이는 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its numbers build up where no one's looking"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見えないところで数値が積み上がるタイプ"
+          }
         }
       }
     },
@@ -2503,6 +5191,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ISFJ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ISFJ"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ISFJ"
@@ -2518,6 +5218,18 @@
             "state": "translated",
             "value": "겉은 조용한데 취향은 확고함"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quiet on the surface, but firm in its tastes"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "外は静かなのに好みははっきりしている"
+          }
         }
       }
     },
@@ -2525,6 +5237,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ISFP"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ISFP"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ISFP"
@@ -2540,6 +5264,18 @@
             "state": "translated",
             "value": "정한 대로만 하는데 그게 은근히 강력함"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Only does it as decided, and that's quietly powerful"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "決めた通りにしかやらないが、それが意外と強力"
+          }
         }
       }
     },
@@ -2547,6 +5283,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ISTJ"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ISTJ"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ISTJ"
@@ -2562,6 +5310,18 @@
             "state": "translated",
             "value": "말보다 도구를 먼저 집어드는 편"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reaches for a tool before it speaks"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "言葉より先に道具を手に取る傾向"
+          }
         }
       }
     },
@@ -2569,6 +5329,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ISTP"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ISTP"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "ISTP"
@@ -2584,6 +5356,18 @@
             "state": "translated",
             "value": "머릿속 이미지가 결과값에 영향을 주는 것으로 추정"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed that its mental images affect the result value"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "頭の中のイメージが結果値に影響を与えると推定"
+          }
         }
       }
     },
@@ -2594,6 +5378,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "구현화계"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conjurer"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "具現化系"
           }
         }
       }
@@ -2606,6 +5402,18 @@
             "state": "translated",
             "value": "몸 밖으로 뭔가 자꾸 새어나가는 느낌"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feels like something keeps leaking out of its body"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "体の外へ何かが漏れ出し続けている感じ"
+          }
         }
       }
     },
@@ -2616,6 +5424,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "방출계"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emitter"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "放出系"
           }
         }
       }
@@ -2628,6 +5448,18 @@
             "state": "translated",
             "value": "있는 걸 극한까지 밀어붙이는 우직한 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "An earnest type that pushes what it has to the limit"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あるものを極限まで押し進める愚直なタイプ"
+          }
         }
       }
     },
@@ -2638,6 +5470,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "강화계"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enhancer"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "強化系"
           }
         }
       }
@@ -2650,6 +5494,18 @@
             "state": "translated",
             "value": "본인보다 주변이 먼저 움직이는 경우가 있음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sometimes its surroundings move before it does"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本人より周囲が先に動くことがある"
+          }
         }
       }
     },
@@ -2660,6 +5516,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "조작계"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manipulator"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "操作系"
           }
         }
       }
@@ -2672,6 +5540,18 @@
             "state": "translated",
             "value": "어느 분류에도 깔끔하게 안 들어맞음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doesn't fit neatly into any category"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "どの分類にもきれいに当てはまらない"
+          }
         }
       }
     },
@@ -2682,6 +5562,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "특질계"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Specialist"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "特質系"
           }
         }
       }
@@ -2694,6 +5586,18 @@
             "state": "translated",
             "value": "측정할 때마다 수치가 미묘하게 달라짐"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its readings differ slightly every time you measure"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測定するたびに数値が微妙に変わる"
+          }
         }
       }
     },
@@ -2704,6 +5608,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "변화계"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transmuter"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "変化系"
           }
         }
       }
@@ -2716,6 +5632,18 @@
             "state": "translated",
             "value": "실체를 붙잡기가 유독 어려운 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A type that's especially hard to grab hold of"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "実体を掴むのが特に難しいタイプ"
+          }
         }
       }
     },
@@ -2726,6 +5654,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "자연계"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logia"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自然系"
           }
         }
       }
@@ -2738,6 +5678,18 @@
             "state": "translated",
             "value": "신체 일부가 설명하기 애매한 방식으로 작동함"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Part of its body works in a way that's hard to explain"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "体の一部が説明しづらい方法で作動する"
+          }
         }
       }
     },
@@ -2748,6 +5700,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "초인계"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paramecia"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "超人系"
           }
         }
       }
@@ -2760,6 +5724,18 @@
             "state": "translated",
             "value": "본모습이 하나 더 있는 것으로 추정"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to have one more true form"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本来の姿がもう一つあると推定"
+          }
         }
       }
     },
@@ -2770,6 +5746,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "동물계"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zoan"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "動物系"
           }
         }
       }
@@ -2782,6 +5770,18 @@
             "state": "translated",
             "value": "말은 없어도 신뢰감이 드는 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Says little, but inspires trust"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無口でも信頼感があるタイプ"
+          }
         }
       }
     },
@@ -2792,6 +5792,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "곰상"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bear Face"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クマ顔"
           }
         }
       }
@@ -2804,6 +5816,18 @@
             "state": "translated",
             "value": "친해지기 전까지 곁을 잘 안 주는 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keeps its distance until it warms up to you"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打ち解けるまでそばを許さないタイプ"
+          }
         }
       }
     },
@@ -2814,6 +5838,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "고양이상"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cat Face"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "猫顔"
           }
         }
       }
@@ -2826,6 +5862,18 @@
             "state": "translated",
             "value": "분위기 자체가 맑고 조심스러운 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its whole aura is clear and cautious"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "雰囲気そのものが澄んでいて慎重なタイプ"
+          }
         }
       }
     },
@@ -2836,6 +5884,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "사슴상"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deer Face"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "鹿顔"
           }
         }
       }
@@ -2848,6 +5908,18 @@
             "state": "translated",
             "value": "처음 보는 대상에게도 경계심이 낮은 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Low on wariness even toward strangers"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "初対面の相手にも警戒心が低いタイプ"
+          }
         }
       }
     },
@@ -2858,6 +5930,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "강아지상"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puppy Face"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "子犬顔"
           }
         }
       }
@@ -2870,6 +5954,18 @@
             "state": "translated",
             "value": "눈치와 계산이 빠른 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick with reading the room and doing the math"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "察しと計算が速いタイプ"
+          }
         }
       }
     },
@@ -2880,6 +5976,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "여우상"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fox Face"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キツネ顔"
           }
         }
       }
@@ -2892,6 +6000,18 @@
             "state": "translated",
             "value": "겉보기엔 여려도 은근히 잘 버팀"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Looks fragile, but quietly holds up well"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見た目はもろくても、意外と持ちこたえる"
+          }
         }
       }
     },
@@ -2902,6 +6022,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "토끼상"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rabbit Face"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "うさぎ顔"
           }
         }
       }
@@ -2914,6 +6046,18 @@
             "state": "translated",
             "value": "관련 수치가 비정상적으로 잘 올라가는 경향"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its relevant stats tend to rise abnormally fast"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "関連数値が異常に上がりやすい傾向"
+          }
         }
       }
     },
@@ -2924,6 +6068,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "벌레"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bug"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "むし"
           }
         }
       }
@@ -2936,6 +6092,18 @@
             "state": "translated",
             "value": "낮보다 밤에 측정치가 더 높게 나옴"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reads higher at night than during the day"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "昼より夜に測定値が高く出る"
+          }
         }
       }
     },
@@ -2946,6 +6114,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "악"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dark"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あく"
           }
         }
       }
@@ -2958,6 +6138,18 @@
             "state": "translated",
             "value": "근본을 알 수 없는 격이 느껴짐"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Radiates a class whose origins can't be traced"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "根源のわからない風格が感じられる"
+          }
         }
       }
     },
@@ -2968,6 +6160,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "드래곤"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dragon"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ドラゴン"
           }
         }
       }
@@ -2980,6 +6184,18 @@
             "state": "translated",
             "value": "각성 시 주변 200m 이내 Wi-Fi 신호가 약해질 수 있음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "May weaken Wi-Fi signals within 200m when awakened"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "覚醒時、周囲200m以内のWi-Fi信号が弱まることがある"
+          }
         }
       }
     },
@@ -2990,6 +6206,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "전기"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Electric"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "でんき"
           }
         }
       }
@@ -3002,6 +6230,18 @@
             "state": "translated",
             "value": "측정 중 촬영자가 잠깐 졸음을 느낌 (정상 반응)"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The photographer briefly feels drowsy during scanning (normal)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測定中、撮影者が少し眠気を感じる（正常な反応）"
+          }
         }
       }
     },
@@ -3012,6 +6252,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "페어리"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fairy"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フェアリー"
           }
         }
       }
@@ -3024,6 +6276,18 @@
             "state": "translated",
             "value": "이론과 실전 사이 괴리가 의외로 적음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Surprisingly small gap between theory and practice"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "理論と実戦の間の乖離が意外と少ない"
+          }
         }
       }
     },
@@ -3034,6 +6298,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "격투"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fighting"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かくとう"
           }
         }
       }
@@ -3046,6 +6322,18 @@
             "state": "translated",
             "value": "내면에 억눌린 열정 지수가 임계치를 넘은 상태"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its bottled-up passion index has crossed the threshold"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内に抑えた情熱指数が臨界値を超えた状態"
+          }
         }
       }
     },
@@ -3056,6 +6344,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "불꽃"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fire"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ほのお"
           }
         }
       }
@@ -3068,6 +6368,18 @@
             "state": "translated",
             "value": "존재 밀도가 낮아 이동 효율이 좋음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Low existence density, so it moves efficiently"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "存在密度が低く、移動効率が良い"
+          }
         }
       }
     },
@@ -3078,6 +6390,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "비행"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Flying"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ひこう"
           }
         }
       }
@@ -3090,6 +6414,18 @@
             "state": "translated",
             "value": "그림자 길이가 물리 법칙을 살짝 무시함"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its shadow length slightly ignores the laws of physics"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "影の長さが物理法則を少し無視する"
+          }
         }
       }
     },
@@ -3100,6 +6436,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "고스트"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ghost"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ゴースト"
           }
         }
       }
@@ -3112,6 +6460,18 @@
             "state": "translated",
             "value": "가만히 있는 것 같지만 내부적으로 매우 바쁨"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Looks still, but very busy on the inside"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "じっとしているようで、内部的にはとても忙しい"
+          }
         }
       }
     },
@@ -3122,6 +6482,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "풀"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grass"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "くさ"
           }
         }
       }
@@ -3134,6 +6506,18 @@
             "state": "translated",
             "value": "중력과의 친화도가 이상하리만치 높음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strangely high affinity with gravity"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重力との親和性が異常なほど高い"
+          }
         }
       }
     },
@@ -3144,6 +6528,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "땅"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ground"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "じめん"
           }
         }
       }
@@ -3156,6 +6552,18 @@
             "state": "translated",
             "value": "겉보기엔 차분, 코어 온도는 비정상적으로 낮음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calm on the surface, abnormally low core temperature"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見た目は穏やか、コア温度は異常に低い"
+          }
         }
       }
     },
@@ -3166,6 +6574,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "얼음"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ice"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "こおり"
           }
         }
       }
@@ -3178,6 +6598,18 @@
             "state": "translated",
             "value": "특별한 게 없다는 것 자체가 특별한 케이스"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A case where having nothing special is itself special"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "特別なものがないこと自体が特別なケース"
+          }
         }
       }
     },
@@ -3188,6 +6620,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "노말"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Normal"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ノーマル"
           }
         }
       }
@@ -3200,6 +6644,18 @@
             "state": "translated",
             "value": "직접적인 해는 없으나 은근한 존재감을 풍김"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No direct harm, but gives off a quiet presence"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "直接的な害はないが、じわりと存在感を放つ"
+          }
         }
       }
     },
@@ -3210,6 +6666,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "독"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poison"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "どく"
           }
         }
       }
@@ -3222,6 +6690,18 @@
             "state": "translated",
             "value": "측정 장비가 이유 없이 오작동을 일으킴"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Causes the measuring equipment to malfunction for no reason"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測定機器が理由もなく誤作動を起こす"
+          }
         }
       }
     },
@@ -3232,6 +6712,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "에스퍼"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Psychic"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エスパー"
           }
         }
       }
@@ -3244,6 +6736,18 @@
             "state": "translated",
             "value": "표면 반사율이 통계적으로 이상치"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its surface reflectance is a statistical outlier"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "表面反射率が統計的に外れ値"
+          }
         }
       }
     },
@@ -3254,6 +6758,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "바위"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rock"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "いわ"
           }
         }
       }
@@ -3266,6 +6782,18 @@
             "state": "translated",
             "value": "외피 경도 수치가 재질과 무관하게 비정상적으로 높음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Its outer hardness is abnormally high regardless of material"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "外皮の硬度が素材に関係なく異常に高い"
+          }
         }
       }
     },
@@ -3276,6 +6804,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "강철"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Steel"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "はがね"
           }
         }
       }
@@ -3288,6 +6828,18 @@
             "state": "translated",
             "value": "형태가 없는데 결속력은 이상하게 강함"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Has no fixed shape, yet its cohesion is oddly strong"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "形はないのに結束力が妙に強い"
+          }
         }
       }
     },
@@ -3298,6 +6850,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "물"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Water"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "みず"
           }
         }
       }
@@ -3310,6 +6874,18 @@
             "state": "translated",
             "value": "세심한 만큼 에너지 소모도 큰 편"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As meticulous as it is, it burns a lot of energy"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "繊細な分、エネルギー消耗も大きい傾向"
+          }
         }
       }
     },
@@ -3320,6 +6896,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "소음인"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soeum"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "少陰人"
           }
         }
       }
@@ -3332,6 +6920,18 @@
             "state": "translated",
             "value": "반응은 빠른데 지속력이 관건인 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quick to react, but stamina is the question"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "反応は速いが持続力が課題のタイプ"
+          }
         }
       }
     },
@@ -3342,6 +6942,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "소양인"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soyang"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "少陽人"
           }
         }
       }
@@ -3354,6 +6966,18 @@
             "state": "translated",
             "value": "느긋해 보여도 은근히 잘 버티는 체질"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Looks laid-back, but quietly endures well"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "のんびりして見えても、意外と粘り強い体質"
+          }
         }
       }
     },
@@ -3364,6 +6988,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "태음인"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taeeum"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "太陰人"
           }
         }
       }
@@ -3376,6 +7012,18 @@
             "state": "translated",
             "value": "추진력은 강한데 뒷심이 관건인 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Strong drive, but its staying power is the question"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "推進力は強いが、後半の粘りが課題のタイプ"
+          }
         }
       }
     },
@@ -3386,6 +7034,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "태양인"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taeyang"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "太陽人"
           }
         }
       }
@@ -3398,6 +7058,18 @@
             "state": "translated",
             "value": "한번 정하면 끝까지 지키는 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Once it decides, it keeps its word to the end"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一度決めたら最後まで守るタイプ"
+          }
         }
       }
     },
@@ -3408,6 +7080,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "개"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dog"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "犬"
           }
         }
       }
@@ -3420,6 +7104,18 @@
             "state": "translated",
             "value": "큰 뜻을 품고 있는 것으로 추정됨"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presumed to hold great ambitions"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大きな志を抱いていると推定される"
+          }
         }
       }
     },
@@ -3430,6 +7126,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "용"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dragon"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "龍"
           }
         }
       }
@@ -3442,6 +7150,18 @@
             "state": "translated",
             "value": "부드러운데 의외로 뚝심 있음"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gentle, but surprisingly stubborn"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "柔らかいのに意外と粘りがある"
+          }
         }
       }
     },
@@ -3452,6 +7172,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "양"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goat"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "羊"
           }
         }
       }
@@ -3464,6 +7196,18 @@
             "state": "translated",
             "value": "멈추지 않고 계속 나아가는 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keeps moving forward without stopping"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "止まらずに進み続けるタイプ"
+          }
         }
       }
     },
@@ -3474,6 +7218,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "말"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Horse"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "馬"
           }
         }
       }
@@ -3486,6 +7242,18 @@
             "state": "translated",
             "value": "손재주와 순발력이 동시에 뛰어난 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skilled with its hands and quick on its feet at once"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "手先の器用さと瞬発力を同時に備えたタイプ"
+          }
         }
       }
     },
@@ -3496,6 +7264,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "원숭이"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monkey"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "猿"
           }
         }
       }
@@ -3508,6 +7288,18 @@
             "state": "translated",
             "value": "느려도 결국 끝까지 해내는 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slow, but gets it done in the end"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "遅くても結局最後までやり遂げるタイプ"
+          }
         }
       }
     },
@@ -3518,6 +7310,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "소"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ox"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "牛"
           }
         }
       }
@@ -3530,6 +7334,18 @@
             "state": "translated",
             "value": "여유로워 보이는데 저력이 상당함"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Looks easygoing, but has serious reserves"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "余裕そうに見えて底力がかなりある"
+          }
         }
       }
     },
@@ -3540,6 +7356,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "돼지"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pig"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "豚"
           }
         }
       }
@@ -3552,6 +7380,18 @@
             "state": "translated",
             "value": "위기 감지와 회피 속도가 남다름"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exceptional at sensing danger and dodging it"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "危機察知と回避の速さが並外れている"
+          }
         }
       }
     },
@@ -3562,6 +7402,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "토끼"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rabbit"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "兎"
           }
         }
       }
@@ -3574,6 +7426,18 @@
             "state": "translated",
             "value": "작은 신호도 먼저 알아채는 편"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Picks up even small signals before others"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "小さな信号も先に察知する傾向"
+          }
         }
       }
     },
@@ -3584,6 +7448,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "쥐"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rat"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "鼠"
           }
         }
       }
@@ -3596,6 +7472,18 @@
             "state": "translated",
             "value": "남들보다 먼저 알리고 싶어하는 유형"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wants to be the first to announce things"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "人より先に知らせたがるタイプ"
+          }
         }
       }
     },
@@ -3606,6 +7494,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "닭"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rooster"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "鶏"
           }
         }
       }
@@ -3618,6 +7518,18 @@
             "state": "translated",
             "value": "결정적인 순간까지 낌새를 안 드러냄"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shows no sign until the decisive moment"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "決定的な瞬間まで気配を見せない"
+          }
         }
       }
     },
@@ -3628,6 +7540,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "뱀"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Snake"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蛇"
           }
         }
       }
@@ -3640,6 +7564,18 @@
             "state": "translated",
             "value": "가만히 있어도 존재감이 느껴짐"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You feel its presence even when it's still"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "じっとしていても存在感が感じられる"
+          }
         }
       }
     },
@@ -3650,6 +7586,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "호랑이"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiger"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "虎"
           }
         }
       }
@@ -3662,6 +7610,18 @@
             "state": "translated",
             "value": "배틀 종료"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End Battle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バトル終了"
+          }
         }
       }
     },
@@ -3672,6 +7632,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "배틀하려면 저장된 카드가 2장 이상 필요합니다"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You need at least 2 saved cards to battle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バトルには保存済みカードが2枚以上必要です"
           }
         }
       }
@@ -3684,6 +7656,18 @@
             "state": "translated",
             "value": "카드를 선택하세요"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick a card"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カードを選んでください"
+          }
         }
       }
     },
@@ -3694,6 +7678,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "내 카드 1"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My Card 1"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分のカード1"
           }
         }
       }
@@ -3706,6 +7702,18 @@
             "state": "translated",
             "value": "내 카드 2"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "My Card 2"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分のカード2"
+          }
         }
       }
     },
@@ -3716,6 +7724,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "다시 대결"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rematch"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もう一度対戦"
           }
         }
       }
@@ -3728,6 +7748,18 @@
             "state": "translated",
             "value": "결투 개시"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Begin Duel"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "決闘開始"
+          }
         }
       }
     },
@@ -3739,6 +7771,18 @@
             "state": "translated",
             "value": "싱글 배틀"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo Battle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ソロバトル"
+          }
         }
       }
     },
@@ -3746,6 +7790,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VS"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VS"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "VS"
@@ -3761,6 +7817,18 @@
             "state": "translated",
             "value": "승리"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Winner"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "勝利"
+          }
         }
       }
     },
@@ -3771,6 +7839,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "카메라 접근 권한이 필요합니다. 설정에서 허용해 주세요."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera access is required. Please allow it in Settings."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カメラへのアクセスが必要です。設定で許可してください。"
           }
         }
       }
@@ -3783,6 +7863,18 @@
             "state": "translated",
             "value": "카드 삭제"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete Card"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カードを削除"
+          }
         }
       }
     },
@@ -3793,6 +7885,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "전적 %1$d승 %2$d패"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Record: %1$d W %2$d L"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "戦績 %1$d勝 %2$d敗"
           }
         }
       }
@@ -3805,6 +7909,18 @@
             "state": "translated",
             "value": "이름 변경"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rename"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名前を変更"
+          }
         }
       }
     },
@@ -3815,6 +7931,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "이미지로 저장"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save as Image"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画像として保存"
           }
         }
       }
@@ -3827,6 +7955,18 @@
             "state": "translated",
             "value": "사진 보관함 접근 권한이 필요합니다. 설정에서 허용해 주세요."
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photo library access is required. Please allow it in Settings."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真ライブラリへのアクセスが必要です。設定で許可してください。"
+          }
         }
       }
     },
@@ -3837,6 +7977,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "저장할 수 없습니다"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Couldn't Save"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存できませんでした"
           }
         }
       }
@@ -3849,6 +8001,18 @@
             "state": "translated",
             "value": "설정으로 이동"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Settings"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定を開く"
+          }
         }
       }
     },
@@ -3859,6 +8023,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "사진 앱에 저장됨"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved to Photos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真アプリに保存しました"
           }
         }
       }
@@ -3871,6 +8047,18 @@
             "state": "translated",
             "value": "저장 중…"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存中…"
+          }
         }
       }
     },
@@ -3881,6 +8069,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "카드 상세"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Card Detail"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カード詳細"
           }
         }
       }
@@ -3893,6 +8093,18 @@
             "state": "translated",
             "value": "아직 저장된 카드가 없습니다"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No saved cards yet"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ保存したカードがありません"
+          }
         }
       }
     },
@@ -3903,6 +8115,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "카드 이름 수정"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edit Card Name"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カード名を編集"
           }
         }
       }
@@ -3915,6 +8139,18 @@
             "state": "translated",
             "value": "취소"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル"
+          }
         }
       }
     },
@@ -3925,6 +8161,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "저장"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存"
           }
         }
       }
@@ -3937,6 +8185,18 @@
             "state": "translated",
             "value": "저장된 카드"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved Cards"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存したカード"
+          }
         }
       }
     },
@@ -3947,6 +8207,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "취소"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル"
           }
         }
       }
@@ -3959,6 +8231,18 @@
             "state": "translated",
             "value": "삭제하기"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "削除する"
+          }
         }
       }
     },
@@ -3969,6 +8253,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "삭제하면 되돌릴 수 없습니다."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This can't be undone."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "削除すると元に戻せません。"
           }
         }
       }
@@ -3981,6 +8277,18 @@
             "state": "translated",
             "value": "카드를 삭제할까요?"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete this card?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このカードを削除しますか？"
+          }
         }
       }
     },
@@ -3991,6 +8299,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "폐기하기"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discard"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "破棄する"
           }
         }
       }
@@ -4003,6 +8323,18 @@
             "state": "translated",
             "value": "저장하지 않고 나가면 이 카드는 사라집니다."
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you leave without saving, this card is gone."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存せずに出ると、このカードは消えます。"
+          }
         }
       }
     },
@@ -4013,6 +8345,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "정말 폐기할까요?"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discard this card?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本当に破棄しますか？"
           }
         }
       }
@@ -4025,6 +8369,18 @@
             "state": "translated",
             "value": "기록 삭제"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete Record"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "記録を削除"
+          }
         }
       }
     },
@@ -4035,6 +8391,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "배틀 기록"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Battle Record"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バトル記録"
           }
         }
       }
@@ -4047,6 +8415,18 @@
             "state": "translated",
             "value": "아직 전적이 없습니다"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No records yet"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ戦績がありません"
+          }
         }
       }
     },
@@ -4057,6 +8437,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "이미지로 저장"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save as Image"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画像として保存"
           }
         }
       }
@@ -4069,6 +8461,18 @@
             "state": "translated",
             "value": "사진 앱에 저장됨"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved to Photos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真アプリに保存しました"
+          }
         }
       }
     },
@@ -4079,6 +8483,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "저장 중…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saving…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存中…"
           }
         }
       }
@@ -4091,6 +8507,18 @@
             "state": "translated",
             "value": "전적"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Records"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "戦績"
+          }
         }
       }
     },
@@ -4098,6 +8526,18 @@
       "extractionState": "manual",
       "localizations": {
         "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VS"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VS"
+          }
+        },
+        "ja": {
           "stringUnit": {
             "state": "translated",
             "value": "VS"
@@ -4113,6 +8553,18 @@
             "state": "translated",
             "value": "싱글 배틀"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo Battle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ソロバトル"
+          }
         }
       }
     },
@@ -4123,6 +8575,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "카드 보관함"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Card Collection"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カードコレクション"
           }
         }
       }
@@ -4135,6 +8599,18 @@
             "state": "translated",
             "value": "전적"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Records"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "戦績"
+          }
         }
       }
     },
@@ -4145,6 +8621,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "근거리 배틀"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nearby Battle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "近くのバトル"
           }
         }
       }
@@ -4157,6 +8645,18 @@
             "state": "translated",
             "value": "측정 시작"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start Scan"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "測定開始"
+          }
         }
       }
     },
@@ -4167,6 +8667,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "잠재력 스캐너"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Potential Scanner"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ポテンシャルスキャナー"
           }
         }
       }
@@ -4179,6 +8691,18 @@
             "state": "translated",
             "value": "근처 호스트를 찾는 중…"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Looking for a nearby host…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "近くのホストを探しています…"
+          }
         }
       }
     },
@@ -4189,6 +8713,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "취소"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル"
           }
         }
       }
@@ -4201,6 +8737,18 @@
             "state": "translated",
             "value": "%@ 와(과) 연결됨"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connected to %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ と接続しました"
+          }
         }
       }
     },
@@ -4211,6 +8759,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "연결 중…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Connecting…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続中…"
           }
         }
       }
@@ -4223,6 +8783,18 @@
             "state": "translated",
             "value": "연결이 끊겼습니다"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disconnected"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接続が切れました"
+          }
         }
       }
     },
@@ -4233,6 +8805,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "배틀 열기"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Battle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バトルを開く"
           }
         }
       }
@@ -4245,6 +8829,18 @@
             "state": "translated",
             "value": "근처 기기의 참가를 기다리는 중…"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for a nearby device to join…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "近くのデバイスの参加を待っています…"
+          }
         }
       }
     },
@@ -4255,6 +8851,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "배틀 참가"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Join Battle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バトルに参加"
           }
         }
       }
@@ -4267,6 +8875,18 @@
             "state": "translated",
             "value": "아직 발견된 호스트가 없습니다"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No hosts found yet"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだホストが見つかりません"
+          }
         }
       }
     },
@@ -4277,6 +8897,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "카드 선택"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick Card"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カードを選ぶ"
           }
         }
       }
@@ -4289,6 +8921,18 @@
             "state": "translated",
             "value": "낼 카드를 선택하세요"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick the card to send"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "出すカードを選んでください"
+          }
         }
       }
     },
@@ -4299,6 +8943,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "근거리 배틀"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nearby Battle"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "近くのバトル"
           }
         }
       }
@@ -4311,6 +8967,18 @@
             "state": "translated",
             "value": "상대의 선택을 기다리는 중…"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for your opponent…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相手の選択を待っています…"
+          }
         }
       }
     },
@@ -4321,6 +8989,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "폐기"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Discard"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "破棄"
           }
         }
       }
@@ -4333,6 +9013,18 @@
             "state": "translated",
             "value": "카드 이름 (선택)"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Card name (optional)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カード名（任意）"
+          }
         }
       }
     },
@@ -4343,6 +9035,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "카드 이름 입력"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name Your Card"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カード名を入力"
           }
         }
       }
@@ -4355,6 +9059,18 @@
             "state": "translated",
             "value": "전투력"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Power"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "戦闘力"
+          }
         }
       }
     },
@@ -4365,6 +9081,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "카드로 저장"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save as Card"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カードとして保存"
           }
         }
       }
@@ -4377,6 +9105,18 @@
             "state": "translated",
             "value": "카드에 저장했습니다"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved to your cards"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カードに保存しました"
+          }
         }
       }
     },
@@ -4388,6 +9128,18 @@
             "state": "translated",
             "value": "취소"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キャンセル"
+          }
         }
       }
     },
@@ -4398,6 +9150,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "사진에서 스캔"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scan from Photo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "写真からスキャン"
           }
         }
       }
@@ -4433,6 +9197,18 @@
             "state": "translated",
             "value": "근거리 카드 교환"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nearby Card Trade"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "近くのカード交換"
+          }
         }
       }
     },
@@ -4443,6 +9219,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "카드 교환"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Card Trade"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カード交換"
           }
         }
       }
@@ -4455,6 +9243,18 @@
             "state": "translated",
             "value": "보낼 카드를 선택하세요"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick the card to send"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送るカードを選んでください"
+          }
         }
       }
     },
@@ -4465,6 +9265,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "상대의 카드를 기다리는 중…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for the other player's card…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相手のカードを待っています…"
           }
         }
       }
@@ -4477,6 +9289,18 @@
             "state": "translated",
             "value": "상대가 카드를 보냈습니다"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The other player sent a card"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相手がカードを送りました"
+          }
         }
       }
     },
@@ -4487,6 +9311,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "받기"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accept"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "受け取る"
           }
         }
       }
@@ -4499,6 +9335,18 @@
             "state": "translated",
             "value": "거절"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decline"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "断る"
+          }
         }
       }
     },
@@ -4509,6 +9357,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "카드를 받았습니다!"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Card received!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カードを受け取りました！"
           }
         }
       }
@@ -4521,6 +9381,18 @@
             "state": "translated",
             "value": "또 교환하기"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trade Again"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もう一度交換"
+          }
         }
       }
     },
@@ -4531,6 +9403,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "교환 종료"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "End Trade"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "交換終了"
           }
         }
       }
@@ -4543,6 +9427,18 @@
             "state": "translated",
             "value": "교환창 열기"
           }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Trade"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "交換を開く"
+          }
         }
       }
     },
@@ -4553,6 +9449,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "교환 참가"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Join Trade"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "交換に参加"
           }
         }
       }
