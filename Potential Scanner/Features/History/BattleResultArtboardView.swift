@@ -65,7 +65,7 @@ private struct BattleCardMini: View {
                 .psHardShadow(radius: PSRadius.card)
 
             Color.clear
-                .aspectRatio(3.0 / 4.0, contentMode: .fit)
+                .aspectRatio(CardCanvas.photoAspectRatio, contentMode: .fit)
                 .frame(maxWidth: .infinity)
                 .overlay(
                     Image(uiImage: UIImage(data: contender.imageData) ?? UIImage())

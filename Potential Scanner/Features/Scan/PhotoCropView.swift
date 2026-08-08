@@ -3,7 +3,7 @@
 //  Potential Scanner
 //
 //  사진 라이브러리에서 고른 이미지를 카드에 들어갈 만큼 미리 보고 맞추는 화면.
-//  조리개(크롭 창)는 카드 사진과 같은 3:4로 고정하고, 사진 쪽을 확대/이동한다.
+//  조리개(크롭 창)는 카드 사진과 같은 비율로 고정하고, 사진 쪽을 확대/이동한다.
 //  여기 조리개에 보이는 픽셀이 곧 카드에 들어가는 픽셀이다.
 //
 
@@ -142,7 +142,7 @@ struct PhotoCropView: View {
 
     // MARK: - 계산
 
-    /// 주어진 공간 안에 들어가는 가장 큰 3:4 조리개.
+    /// 주어진 공간 안에 들어가는, 카드 사진 비율의 가장 큰 조리개.
     private func apertureSize(in containerSize: CGSize) -> CGSize {
         guard containerSize.width > 0, containerSize.height > 0 else { return .zero }
 
