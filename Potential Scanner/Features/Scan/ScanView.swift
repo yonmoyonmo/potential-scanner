@@ -16,37 +16,37 @@ struct ScanView: View {
     @State private var hapticPulse = 0
     @State private var captureHapticTrigger = 0
     @State private var captureFlash = false
+    @State private var isPickerPresented = false
     @State private var pickerItem: PhotosPickerItem?
+    @State private var cropCandidate: CropCandidate?
     @State private var pickedImage: UIImage?
+    /// 세이프에어리어를 무시한 전체 화면 크기. 카메라 프리뷰 레이어가 이 크기에
+    /// aspect-fill로 깔리므로, 크롭 역산도 반드시 같은 좌표계에서 해야 한다.
+    @State private var screenSize: CGSize = .zero
 
     private var isScanning: Bool {
         if case .scanning = viewModel.phase { return true }
         return false
     }
 
+    private var cropRect: CGRect { ScanFraming.cropRect(in: screenSize) }
+
     private let hapticTimer = Timer.publish(every: 1.4, on: .main, in: .common).autoconnect()
 
     var body: some View {
         ZStack {
-            if let pickedImage {
-                GeometryReader { geo in
-                    Image(uiImage: pickedImage)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: geo.size.width, height: geo.size.height)
-                        .clipped()
-                }
-                .ignoresSafeArea()
-            } else {
-                CameraPreview(session: viewModel.camera.session)
-                    .ignoresSafeArea()
-            }
+            screenMeasure
+
+            background
 
             if case .idle = viewModel.phase {
-                ScanFramingGuide()
+                ScanFramingGuide(cropRect: cropRect)
             }
 
             if case .scanning = viewModel.phase {
+                // 셔터는 연출이 끝난 뒤에 눌리므로, 그동안에도 프레임 기준은 계속 보여야
+                // 피사체가 창 밖으로 흘러나가지 않는다. 연출은 가리지 않게 테두리만.
+                ScanFramingGuide(cropRect: cropRect, dimsSurroundings: false)
                 ScanOverlayView(isScanning: true)
                     .ignoresSafeArea()
                 ScanHUDView(isScanning: true)
@@ -59,6 +59,26 @@ struct ScanView: View {
                 .opacity(captureFlash ? 1 : 0)
                 .ignoresSafeArea()
                 .allowsHitTesting(false)
+
+            // 크롭 화면은 시트가 아니라 이 ZStack의 한 겹으로 띄운다. fullScreenCover로
+            // 띄우면 세이프에어리어 인셋이 0으로 전달돼 헤더가 상태바에 물린다.
+            if let candidate = cropCandidate {
+                PhotoCropView(
+                    image: candidate.image,
+                    onConfirm: { cropped in
+                        cropCandidate = nil
+                        pickedImage = cropped
+                        Task { await viewModel.startScan(with: cropped) }
+                    },
+                    onReselect: {
+                        cropCandidate = nil
+                        isPickerPresented = true
+                    },
+                    onCancel: { cropCandidate = nil }
+                )
+                .transition(.opacity)
+                .zIndex(1)
+            }
 
             VStack {
                 HStack {
@@ -78,21 +98,20 @@ struct ScanView: View {
                 case .idle:
                     VStack(spacing: 12) {
                         PSButton(title: String(localized: String.LocalizationValue("ui.home.scanButton"))) {
-                            Task { await viewModel.startScan() }
+                            // 화면에 그려진 가이드와 같은 값을 그대로 넘긴다.
+                            let guideRect = cropRect
+                            let container = screenSize
+                            Task {
+                                await viewModel.startScan(guideRect: guideRect, containerSize: container)
+                            }
                         }
 
-                        PhotosPicker(selection: $pickerItem, matching: .images) {
-                            Text(String(localized: String.LocalizationValue("ui.scan.pickPhotoButton")))
-                                .font(PSTypography.summary)
-                                .foregroundStyle(PSColor.ink)
-                                .frame(maxWidth: .infinity)
-                                .padding(.vertical, 14)
-                                .background(
-                                    RoundedRectangle(cornerRadius: PSRadius.card)
-                                        .fill(PSColor.cardFill)
-                                )
+                        PSButton(
+                            title: String(localized: String.LocalizationValue("ui.scan.pickPhotoButton")),
+                            isProminent: false
+                        ) {
+                            isPickerPresented = true
                         }
-                        .psHardShadow(radius: PSRadius.card)
                     }
                     .padding(.horizontal, 40)
                     .padding(.bottom, 40)
@@ -113,15 +132,18 @@ struct ScanView: View {
         }
         .onAppear { viewModel.onAppear() }
         .onDisappear { viewModel.onDisappear() }
+        .photosPicker(isPresented: $isPickerPresented, selection: $pickerItem, matching: .images)
         .onChange(of: pickerItem) { _, newItem in
             guard let newItem else { return }
             Task {
+                // 같은 사진을 다시 골라도 onChange가 걸리도록 선택값을 비워 둔다.
+                defer { pickerItem = nil }
                 guard
                     let data = try? await newItem.loadTransferable(type: Data.self),
                     let image = UIImage(data: data)
                 else { return }
-                pickedImage = image
-                await viewModel.startScan(with: image)
+                // 크롭 계산이 EXIF 회전에 걸리지 않도록 방향을 미리 픽셀에 굽는다.
+                cropCandidate = CropCandidate(image: image.normalizedOrientation())
             }
         }
         .onReceive(hapticTimer) { _ in
@@ -140,6 +162,47 @@ struct ScanView: View {
             }
         }
     }
+
+    /// 세이프에어리어를 무시한 전체 화면 크기를 재는 투명 레이어.
+    /// 프리뷰 레이어와 같은 좌표계를 얻기 위한 것이라 `.ignoresSafeArea()`가 필수다 —
+    /// 이게 빠지면 크롭 영역이 노치/홈바 높이만큼 위아래로 밀린다.
+    private var screenMeasure: some View {
+        GeometryReader { proxy in
+            Color.clear
+                .onAppear { screenSize = proxy.size }
+                .onChange(of: proxy.size) { _, newSize in screenSize = newSize }
+        }
+        .ignoresSafeArea()
+        .allowsHitTesting(false)
+    }
+
+    /// 사진 경로에서는 확정된 크롭 결과를 조준 창과 같은 자리에 같은 크기로 띄운다 —
+    /// 크롭 에디터에서 본 그림과 스캔 중에 보이는 그림이 어긋나면 안 된다.
+    @ViewBuilder
+    private var background: some View {
+        if let pickedImage {
+            ZStack {
+                Color.black
+                Image(uiImage: pickedImage)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: cropRect.width, height: cropRect.height)
+                    .clipShape(RoundedRectangle(cornerRadius: PSRadius.card))
+                    .position(x: cropRect.midX, y: cropRect.midY)
+            }
+            .ignoresSafeArea()
+        } else {
+            CameraPreview(session: viewModel.camera.session)
+                .ignoresSafeArea()
+        }
+    }
+}
+
+/// `fullScreenCover(item:)`에 넘기기 위한 래퍼. 매번 새 id를 받아, 같은 사진을
+/// 다시 골라도 크롭 화면이 새로 뜬다.
+private struct CropCandidate: Identifiable {
+    let id = UUID()
+    let image: UIImage
 }
 
 extension ScanViewModel.Phase: Equatable {

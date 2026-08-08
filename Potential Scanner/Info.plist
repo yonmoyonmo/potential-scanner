@@ -27,11 +27,16 @@
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>카드 이미지를 사진 앱에 저장하려면 접근 권한이 필요합니다.</string>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>근처 기기와 배틀하려면 로컬 네트워크 접근 권한이 필요합니다.</string>
+	<string>근처 기기와 배틀하거나 카드를 교환하려면 로컬 네트워크 접근 권한이 필요합니다.</string>
+	<!-- MultipeerConnectivity가 쓰는 서비스 타입은 전부 여기 선언돼 있어야 한다.
+	     빠지면 start...Peer가 조용히 실패하고 화면만 되돌아간다.
+	     btl = 배틀, exc = 카드 교환 (MultipeerService.Mode와 짝) -->
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_potscan-btl._tcp</string>
 		<string>_potscan-btl._udp</string>
+		<string>_potscan-exc._tcp</string>
+		<string>_potscan-exc._udp</string>
 	</array>
 	<key>UIAppFonts</key>
 	<array>

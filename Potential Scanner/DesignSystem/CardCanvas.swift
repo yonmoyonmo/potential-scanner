@@ -13,4 +13,11 @@ import Foundation
 enum CardCanvas {
     static let size = CGSize(width: 750, height: 1050)
     static var aspectRatio: CGFloat { size.width / size.height }
+
+    /// 카드 안 사진 영역의 가로:세로 비율. 촬영 가이드·크롭 에디터·카드 렌더가
+    /// 전부 이 값 하나를 보게 해서, 세 곳이 따로 놀며 어긋나는 일을 막는다.
+    ///
+    /// 사진 영역은 카드에서 남는 높이를 채우는 유연한 칸이라, 비율을 고정해 두지 않으면
+    /// 코멘트 길이에 따라 카드마다 모양이 달라진다 — 그러면 어떤 크롭 비율로도 맞출 수 없다.
+    static let photoAspectRatio: CGFloat = 4.0 / 3.0
 }

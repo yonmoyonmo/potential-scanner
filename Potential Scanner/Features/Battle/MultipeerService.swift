@@ -16,6 +16,9 @@ enum MultipeerMessage: Codable {
     case card(BattleContender)
     case result(BattleOutcome)
     case rematch
+    /// 교환 라운드를 양쪽 다 처음으로 되돌린다. 거절과 "다시 교환하기" 양쪽에 쓴다 —
+    /// 한쪽만 리셋하면 상대는 오지 않을 카드를 계속 기다린다.
+    case exchangeReset
     /// 근거리 링크가 idle로 끊기지 않도록 주기적으로 흘려보내는 유지용 핑. 받는 쪽은 무시.
     case ping
 }
@@ -31,8 +34,23 @@ final class MultipeerService: NSObject {
         case connected
     }
 
-    private static let serviceType = "potscan-btl"
+    /// 배틀과 교환은 서로 말이 통하지 않으므로(주고받는 메시지가 다르다) 서비스 타입을
+    /// 갈라 놓는다. 같은 타입을 쓰면 배틀 대기 중인 기기가 교환 탐색 목록에 뜨고,
+    /// 붙고 나서야 서로의 메시지를 무시하며 영원히 대기하게 된다.
+    enum Mode {
+        case battle
+        case exchange
 
+        /// MultipeerConnectivity 제약: 15자 이하, 소문자·숫자·하이픈만.
+        var serviceType: String {
+            switch self {
+            case .battle: "potscan-btl"
+            case .exchange: "potscan-exc"
+            }
+        }
+    }
+
+    @ObservationIgnored private let mode: Mode
     @ObservationIgnored private let myPeerID = MCPeerID(displayName: UIDevice.current.name)
     @ObservationIgnored private lazy var session: MCSession = {
         // 장난감 앱이라 암호화 핸드셰이크 실패로 연결이 안 되는 걸 피하기 위해 .none.
@@ -53,13 +71,18 @@ final class MultipeerService: NSObject {
 
     var onReceiveMessage: ((MultipeerMessage) -> Void)?
 
+    init(mode: Mode) {
+        self.mode = mode
+        super.init()
+    }
+
     // MARK: - Host / Guest 시작
 
-    func hostBattle() {
+    func host() {
         reset()
         isHost = true
         let advertiser = MCNearbyServiceAdvertiser(
-            peer: myPeerID, discoveryInfo: nil, serviceType: Self.serviceType
+            peer: myPeerID, discoveryInfo: nil, serviceType: mode.serviceType
         )
         advertiser.delegate = self
         advertiser.startAdvertisingPeer()
@@ -67,10 +90,10 @@ final class MultipeerService: NSObject {
         state = .advertising
     }
 
-    func joinBattle() {
+    func join() {
         reset()
         isHost = false
-        let browser = MCNearbyServiceBrowser(peer: myPeerID, serviceType: Self.serviceType)
+        let browser = MCNearbyServiceBrowser(peer: myPeerID, serviceType: mode.serviceType)
         browser.delegate = self
         browser.startBrowsingForPeers()
         self.browser = browser

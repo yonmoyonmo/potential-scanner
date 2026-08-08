@@ -14,7 +14,7 @@ struct MultiplayerBattleView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \ScanCard.scannedAt, order: .reverse) private var cards: [ScanCard]
-    @State private var service = MultipeerService()
+    @State private var service = MultipeerService(mode: .battle)
 
     // 연결 이후 라운드 상태
     @State private var myCard: BattleContender?
@@ -69,13 +69,13 @@ struct MultiplayerBattleView: View {
     private var roleSelect: some View {
         VStack(spacing: 16) {
             PSButton(title: String(localized: String.LocalizationValue("ui.multiBattle.hostButton"))) {
-                service.hostBattle()
+                service.host()
             }
             PSButton(
                 title: String(localized: String.LocalizationValue("ui.multiBattle.joinButton")),
                 isProminent: false
             ) {
-                service.joinBattle()
+                service.join()
             }
         }
         .padding(.horizontal, 40)
@@ -229,6 +229,8 @@ struct MultiplayerBattleView: View {
             BattleRecorder.record(received, in: modelContext, myCards: cards)
         case .rematch:
             resetRound()
+        case .exchangeReset:
+            break // 카드 교환 전용 — 배틀에선 무시
         case .ping:
             break // 연결 유지용 — 무시
         }

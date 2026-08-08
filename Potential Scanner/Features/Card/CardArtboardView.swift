@@ -26,11 +26,12 @@ struct CardArtboardView: View {
 
             starRow
 
-            // 세로로 긴 4:3(3:4) 비율 고정 — 이 VStack의 남는 공간을 꽉 채우는 크기로
-            // 자동 계산되므로, 위아래 다른 요소 크기가 바뀌어도 비율이 안 깨진다.
+            // 사진 영역 비율 고정. overlay/clip은 반드시 aspectRatio 뒤·frame 앞에 와야
+            // 한다 — frame(maxWidth/maxHeight: .infinity)를 먼저 걸면 뷰가 남는 공간을
+            // 통째로 차지해 비율이 풀리고, 그 위에 덧씌운 사진이 한 번 더 잘린다.
+            // (스캔 크롭과 여기가 어긋나던 원인)
             Color.clear
-                .aspectRatio(3.0 / 4.0, contentMode: .fit)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .aspectRatio(CardCanvas.photoAspectRatio, contentMode: .fit)
                 .overlay(
                     Image(uiImage: content.photo)
                         .resizable()
@@ -38,6 +39,7 @@ struct CardArtboardView: View {
                 )
                 .clipShape(RoundedRectangle(cornerRadius: PSRadius.card))
                 .psHardShadow(radius: PSRadius.card)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
 
             PSCard {
                 VStack(alignment: .leading, spacing: 16) {

@@ -13,7 +13,7 @@ import SwiftUI
 struct NearbyCardExchangeView: View {
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \ScanCard.scannedAt, order: .reverse) private var cards: [ScanCard]
-    @State private var service = MultipeerService()
+    @State private var service = MultipeerService(mode: .exchange)
 
     @State private var myCard: BattleContender?
     @State private var oppCard: BattleContender?
@@ -23,17 +23,26 @@ struct NearbyCardExchangeView: View {
         ZStack {
             PSColor.background.ignoresSafeArea()
 
-            switch service.state {
-            case .idle:
-                roleSelect
-            case .advertising:
-                statusView(messageKey: "ui.multiBattle.hosting")
-            case .browsing:
-                joiningView
-            case .connecting:
-                statusView(messageKey: "ui.multiBattle.connecting")
-            case .connected:
-                connectedView
+            // 내가 이미 필요한 걸 다 들고 있는 단계(받을지 판단 / 저장 완료)는 연결
+            // 상태와 무관하게 유지한다 — 배틀 리빌과 같은 이유다. 여기서 사람이 카드를
+            // 들여다보며 고민하는 동안 링크가 잠깐 끊겼다고 화면이 통째로 날아가면 안 된다.
+            if didSave {
+                savedView
+            } else if let oppCard, myCard != nil {
+                offerReceivedView(oppCard)
+            } else {
+                switch service.state {
+                case .idle:
+                    roleSelect
+                case .advertising:
+                    statusView(messageKey: "ui.multiBattle.hosting")
+                case .browsing:
+                    joiningView
+                case .connecting:
+                    statusView(messageKey: "ui.multiBattle.connecting")
+                case .connected:
+                    connectedView
+                }
             }
         }
         .psNavigationTitle("ui.exchange.title")
@@ -49,13 +58,13 @@ struct NearbyCardExchangeView: View {
     private var roleSelect: some View {
         VStack(spacing: 16) {
             PSButton(title: String(localized: String.LocalizationValue("ui.exchange.hostButton"))) {
-                service.hostBattle()
+                service.host()
             }
             PSButton(
                 title: String(localized: String.LocalizationValue("ui.exchange.joinButton")),
                 isProminent: false
             ) {
-                service.joinBattle()
+                service.join()
             }
         }
         .padding(.horizontal, 40)
@@ -98,13 +107,13 @@ struct NearbyCardExchangeView: View {
 
     // MARK: - 연결됨: 카드 선택 → 수신 대기 → 미리보기/받기 → 완료
 
+    /// 받기 판단/저장 완료 단계는 body 상단에서 처리한다. 여기선 아직 내 카드를
+    /// 안 보낸 단계만 담당 — 상대 카드가 먼저 도착했더라도 내 카드를 고르는 게 먼저다.
+    /// (예전엔 상대 카드가 먼저 오면 선택 화면이 사라져서, 받기만 하고 내 카드는
+    ///  영영 안 나가는 일방 교환이 됐다.)
     @ViewBuilder
     private var connectedView: some View {
-        if didSave {
-            savedView
-        } else if let oppCard {
-            offerReceivedView(oppCard)
-        } else if myCard != nil {
+        if myCard != nil {
             statusView(messageKey: "ui.exchange.waitingOpponentCard")
         } else {
             pickPromptView
@@ -184,7 +193,9 @@ struct NearbyCardExchangeView: View {
                         isProminent: false
                     ) {
                         // 거절하면 내가 이미 보낸 카드도 무의미해지므로, 시퀀스 전체를
-                        // 정리하고 다시 카드 선택 화면으로 돌아간다.
+                        // 정리하고 다시 카드 선택 화면으로 돌아간다. 상대에게도 알려야
+                        // 오지 않을 카드를 계속 기다리지 않는다.
+                        service.send(.exchangeReset)
                         resetRound()
                     }
                     PSButton(title: String(localized: String.LocalizationValue("ui.exchange.acceptButton"))) {
@@ -209,6 +220,8 @@ struct NearbyCardExchangeView: View {
             }
 
             PSButton(title: String(localized: String.LocalizationValue("ui.exchange.exchangeAgainButton"))) {
+                // 나만 리셋하면 상대는 저장 완료 화면에 그대로 남아 상태가 어긋난다.
+                service.send(.exchangeReset)
                 resetRound()
             }
             PSButton(
@@ -255,6 +268,9 @@ struct NearbyCardExchangeView: View {
         switch message {
         case .card(let contender):
             oppCard = contender
+        case .exchangeReset:
+            // 상대가 거절했거나 다시 교환하자고 한 경우. 양쪽이 같이 처음으로 돌아간다.
+            resetRound()
         case .result, .rematch:
             break // 배틀 전용 메시지 — 교환 화면에선 무시
         case .ping:
