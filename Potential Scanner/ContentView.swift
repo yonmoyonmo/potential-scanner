@@ -70,8 +70,8 @@ struct ContentView: View {
             }
         }
         .task {
-            try? await Task.sleep(for: .seconds(1.4))
-            withAnimation(.easeOut(duration: 0.4)) {
+            try? await Task.sleep(for: .seconds(1.8))
+            withAnimation(.easeInOut(duration: 0.5)) {
                 showSplash = false
             }
         }
