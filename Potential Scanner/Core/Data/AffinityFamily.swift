@@ -92,5 +92,48 @@ extension AffinityFamily {
         // 계절
         "season.spring": .wood, "season.summer": .fire,
         "season.autumn": .wind, "season.winter": .ice,
+
+        // --- 아래는 legacy 타입(현재 뽑기 풀엔 없지만, 예전에 저장된 카드가 참조할 수 있음) ---
+        // 헌터 넨
+        "nen.enhancer": .earth, "nen.emitter": .explosion, "nen.manipulator": .magnet,
+        "nen.transmuter": .water, "nen.specialist": .superMagnet, "nen.conjurer": .wood,
+        // 원피스
+        "onepiece.paramecia": .explosion, "onepiece.logia": .water, "onepiece.zoan": .wood,
+        // 귀멸 호흡
+        "breath.sun": .fire, "breath.water": .water, "breath.flame": .fire,
+        "breath.wind": .wind, "breath.stone": .earth, "breath.thunder": .lightning,
+        "breath.love": .magnet, "breath.serpent": .water, "breath.mist": .ice,
+        "breath.sound": .lightning, "breath.insect": .wood, "breath.beast": .explosion,
+        "breath.flower": .wood, "breath.moon": .superMagnet,
+        // 나루토 차크라
+        "chakra.fire": .fire, "chakra.water": .water, "chakra.wind": .wind,
+        "chakra.lightning": .lightning, "chakra.earth": .earth, "chakra.ice": .ice,
+        "chakra.wood": .wood, "chakra.lava": .lava, "chakra.explosion": .explosion,
+        "chakra.magnet": .magnet, "chakra.supermagnet": .superMagnet,
+        // MBTI
+        "mbti.istj": .earth, "mbti.isfj": .wood, "mbti.infj": .superMagnet,
+        "mbti.intj": .magnet, "mbti.istp": .explosion, "mbti.isfp": .ice,
+        "mbti.infp": .water, "mbti.intp": .superMagnet, "mbti.estp": .lightning,
+        "mbti.esfp": .fire, "mbti.enfp": .fire, "mbti.entp": .wind,
+        "mbti.estj": .earth, "mbti.esfj": .wood, "mbti.enfj": .magnet, "mbti.entj": .explosion,
+        // 혈액형
+        "blood.a": .earth, "blood.b": .wind, "blood.o": .fire, "blood.ab": .superMagnet,
+        // 사상의학
+        "sasang.taeyang": .fire, "sasang.taeeum": .earth, "sasang.soyang": .lightning,
+        "sasang.soeum": .water,
+        // 십이지신
+        "zodiac12.rat": .lightning, "zodiac12.ox": .earth, "zodiac12.tiger": .fire,
+        "zodiac12.rabbit": .wind, "zodiac12.dragon": .lava, "zodiac12.snake": .magnet,
+        "zodiac12.horse": .wind, "zodiac12.goat": .wood, "zodiac12.monkey": .explosion,
+        "zodiac12.rooster": .superMagnet, "zodiac12.dog": .earth, "zodiac12.pig": .wood,
+        // 별자리
+        "constellation.aries": .fire, "constellation.taurus": .earth, "constellation.gemini": .wind,
+        "constellation.cancer": .water, "constellation.leo": .fire, "constellation.virgo": .earth,
+        "constellation.libra": .wind, "constellation.scorpio": .magnet,
+        "constellation.sagittarius": .explosion, "constellation.capricorn": .earth,
+        "constellation.aquarius": .superMagnet, "constellation.pisces": .water,
+        // 관상
+        "physiognomy.dog": .fire, "physiognomy.cat": .ice, "physiognomy.fox": .wind,
+        "physiognomy.bear": .earth, "physiognomy.rabbit": .wood, "physiognomy.deer": .ice,
     ]
 }

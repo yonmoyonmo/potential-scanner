@@ -26,10 +26,11 @@ struct PotentialType: Identifiable, Hashable {
 
 extension PotentialType {
     private static let byID: [String: PotentialType] = Dictionary(
-        uniqueKeysWithValues: all.map { ($0.id, $0) }
+        uniqueKeysWithValues: (all + legacy).map { ($0.id, $0) }
     )
 
     /// 저장된 카드에 박혀있는 typeID로 원래 타입을 역으로 찾는다.
+    /// (현재 뽑기 풀에서 빠진 legacy 타입이라도 예전에 저장된 카드는 여기서 정상적으로 찾아진다.)
     static func find(byID id: String) -> PotentialType? {
         byID[id]
     }
@@ -123,5 +124,108 @@ extension PotentialType {
         PotentialType(id: "season.summer", seriesID: "season"),
         PotentialType(id: "season.autumn", seriesID: "season"),
         PotentialType(id: "season.winter", seriesID: "season"),
+    ]
+
+    /// 예전에 뽑기 풀에 있었지만 지금은 빠진 타입들. 새 스캔에서는 절대 안 뽑히지만,
+    /// 이미 이 타입으로 저장된 카드/전적이 있으면 이름·설명이 깨지지 않게 여기서 계속 찾아준다.
+    static let legacy: [PotentialType] = [
+        // nen (6)
+        PotentialType(id: "nen.enhancer", seriesID: "nen"),
+        PotentialType(id: "nen.emitter", seriesID: "nen"),
+        PotentialType(id: "nen.manipulator", seriesID: "nen"),
+        PotentialType(id: "nen.transmuter", seriesID: "nen"),
+        PotentialType(id: "nen.specialist", seriesID: "nen"),
+        PotentialType(id: "nen.conjurer", seriesID: "nen"),
+        // onepiece (3)
+        PotentialType(id: "onepiece.paramecia", seriesID: "onepiece"),
+        PotentialType(id: "onepiece.logia", seriesID: "onepiece"),
+        PotentialType(id: "onepiece.zoan", seriesID: "onepiece"),
+        // breath (14)
+        PotentialType(id: "breath.sun", seriesID: "breath"),
+        PotentialType(id: "breath.water", seriesID: "breath"),
+        PotentialType(id: "breath.flame", seriesID: "breath"),
+        PotentialType(id: "breath.wind", seriesID: "breath"),
+        PotentialType(id: "breath.stone", seriesID: "breath"),
+        PotentialType(id: "breath.thunder", seriesID: "breath"),
+        PotentialType(id: "breath.love", seriesID: "breath"),
+        PotentialType(id: "breath.serpent", seriesID: "breath"),
+        PotentialType(id: "breath.mist", seriesID: "breath"),
+        PotentialType(id: "breath.sound", seriesID: "breath"),
+        PotentialType(id: "breath.insect", seriesID: "breath"),
+        PotentialType(id: "breath.beast", seriesID: "breath"),
+        PotentialType(id: "breath.flower", seriesID: "breath"),
+        PotentialType(id: "breath.moon", seriesID: "breath"),
+        // chakra (11)
+        PotentialType(id: "chakra.fire", seriesID: "chakra"),
+        PotentialType(id: "chakra.water", seriesID: "chakra"),
+        PotentialType(id: "chakra.wind", seriesID: "chakra"),
+        PotentialType(id: "chakra.lightning", seriesID: "chakra"),
+        PotentialType(id: "chakra.earth", seriesID: "chakra"),
+        PotentialType(id: "chakra.ice", seriesID: "chakra"),
+        PotentialType(id: "chakra.wood", seriesID: "chakra"),
+        PotentialType(id: "chakra.lava", seriesID: "chakra"),
+        PotentialType(id: "chakra.explosion", seriesID: "chakra"),
+        PotentialType(id: "chakra.magnet", seriesID: "chakra"),
+        PotentialType(id: "chakra.supermagnet", seriesID: "chakra"),
+        // mbti (16)
+        PotentialType(id: "mbti.istj", seriesID: "mbti"),
+        PotentialType(id: "mbti.isfj", seriesID: "mbti"),
+        PotentialType(id: "mbti.infj", seriesID: "mbti"),
+        PotentialType(id: "mbti.intj", seriesID: "mbti"),
+        PotentialType(id: "mbti.istp", seriesID: "mbti"),
+        PotentialType(id: "mbti.isfp", seriesID: "mbti"),
+        PotentialType(id: "mbti.infp", seriesID: "mbti"),
+        PotentialType(id: "mbti.intp", seriesID: "mbti"),
+        PotentialType(id: "mbti.estp", seriesID: "mbti"),
+        PotentialType(id: "mbti.esfp", seriesID: "mbti"),
+        PotentialType(id: "mbti.enfp", seriesID: "mbti"),
+        PotentialType(id: "mbti.entp", seriesID: "mbti"),
+        PotentialType(id: "mbti.estj", seriesID: "mbti"),
+        PotentialType(id: "mbti.esfj", seriesID: "mbti"),
+        PotentialType(id: "mbti.enfj", seriesID: "mbti"),
+        PotentialType(id: "mbti.entj", seriesID: "mbti"),
+        // blood (4)
+        PotentialType(id: "blood.a", seriesID: "blood"),
+        PotentialType(id: "blood.b", seriesID: "blood"),
+        PotentialType(id: "blood.o", seriesID: "blood"),
+        PotentialType(id: "blood.ab", seriesID: "blood"),
+        // sasang (4)
+        PotentialType(id: "sasang.taeyang", seriesID: "sasang"),
+        PotentialType(id: "sasang.taeeum", seriesID: "sasang"),
+        PotentialType(id: "sasang.soyang", seriesID: "sasang"),
+        PotentialType(id: "sasang.soeum", seriesID: "sasang"),
+        // zodiac12 (12)
+        PotentialType(id: "zodiac12.rat", seriesID: "zodiac12"),
+        PotentialType(id: "zodiac12.ox", seriesID: "zodiac12"),
+        PotentialType(id: "zodiac12.tiger", seriesID: "zodiac12"),
+        PotentialType(id: "zodiac12.rabbit", seriesID: "zodiac12"),
+        PotentialType(id: "zodiac12.dragon", seriesID: "zodiac12"),
+        PotentialType(id: "zodiac12.snake", seriesID: "zodiac12"),
+        PotentialType(id: "zodiac12.horse", seriesID: "zodiac12"),
+        PotentialType(id: "zodiac12.goat", seriesID: "zodiac12"),
+        PotentialType(id: "zodiac12.monkey", seriesID: "zodiac12"),
+        PotentialType(id: "zodiac12.rooster", seriesID: "zodiac12"),
+        PotentialType(id: "zodiac12.dog", seriesID: "zodiac12"),
+        PotentialType(id: "zodiac12.pig", seriesID: "zodiac12"),
+        // constellation (12)
+        PotentialType(id: "constellation.aries", seriesID: "constellation"),
+        PotentialType(id: "constellation.taurus", seriesID: "constellation"),
+        PotentialType(id: "constellation.gemini", seriesID: "constellation"),
+        PotentialType(id: "constellation.cancer", seriesID: "constellation"),
+        PotentialType(id: "constellation.leo", seriesID: "constellation"),
+        PotentialType(id: "constellation.virgo", seriesID: "constellation"),
+        PotentialType(id: "constellation.libra", seriesID: "constellation"),
+        PotentialType(id: "constellation.scorpio", seriesID: "constellation"),
+        PotentialType(id: "constellation.sagittarius", seriesID: "constellation"),
+        PotentialType(id: "constellation.capricorn", seriesID: "constellation"),
+        PotentialType(id: "constellation.aquarius", seriesID: "constellation"),
+        PotentialType(id: "constellation.pisces", seriesID: "constellation"),
+        // physiognomy (6)
+        PotentialType(id: "physiognomy.dog", seriesID: "physiognomy"),
+        PotentialType(id: "physiognomy.cat", seriesID: "physiognomy"),
+        PotentialType(id: "physiognomy.fox", seriesID: "physiognomy"),
+        PotentialType(id: "physiognomy.bear", seriesID: "physiognomy"),
+        PotentialType(id: "physiognomy.rabbit", seriesID: "physiognomy"),
+        PotentialType(id: "physiognomy.deer", seriesID: "physiognomy"),
     ]
 }
