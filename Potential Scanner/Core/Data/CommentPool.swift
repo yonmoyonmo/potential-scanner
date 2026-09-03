@@ -9,8 +9,8 @@
 import Foundation
 
 enum CommentPool {
-    /// 코멘트 id: comment.001 ... comment.067
-    static let commentIDs: [String] = (1...67).map { String(format: "comment.%03d", $0) }
+    /// 코멘트 id: comment.001 ... comment.127
+    static let commentIDs: [String] = (1...127).map { String(format: "comment.%03d", $0) }
 
     /// 클로징 멘트 id: closing.001 ... closing.004
     static let closingLineIDs: [String] = (1...4).map { String(format: "closing.%03d", $0) }

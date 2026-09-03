@@ -51,8 +51,7 @@ extension AffinityFamily {
         familyByTypeID[id] ?? .earth
     }
 
-    /// 108종 → 11계열 테마 매핑. (원작 상성이 있는 포켓몬/차크라/귀멸은 직관적으로,
-    /// MBTI·혈액형·별자리 등 무속성류는 성격 뉘앙스로 배정)
+    /// 포켓몬 18종 + D&D 계열 20종 → 11계열 테마 매핑.
     private static let familyByTypeID: [String: AffinityFamily] = [
         // 포켓몬
         "pokemon.normal": .earth, "pokemon.fire": .fire, "pokemon.water": .water,
@@ -61,48 +60,37 @@ extension AffinityFamily {
         "pokemon.flying": .wind, "pokemon.psychic": .superMagnet, "pokemon.bug": .wood,
         "pokemon.rock": .earth, "pokemon.ghost": .superMagnet, "pokemon.dragon": .lava,
         "pokemon.dark": .magnet, "pokemon.steel": .magnet, "pokemon.fairy": .superMagnet,
-        // 헌터 넨
-        "nen.enhancer": .earth, "nen.emitter": .explosion, "nen.manipulator": .magnet,
-        "nen.transmuter": .water, "nen.specialist": .superMagnet, "nen.conjurer": .wood,
-        // 원피스
-        "onepiece.paramecia": .explosion, "onepiece.logia": .water, "onepiece.zoan": .wood,
-        // 귀멸 호흡
-        "breath.sun": .fire, "breath.water": .water, "breath.flame": .fire,
-        "breath.wind": .wind, "breath.stone": .earth, "breath.thunder": .lightning,
-        "breath.love": .magnet, "breath.serpent": .water, "breath.mist": .ice,
-        "breath.sound": .lightning, "breath.insect": .wood, "breath.beast": .explosion,
-        "breath.flower": .wood, "breath.moon": .superMagnet,
-        // 나루토 차크라 (직접 매핑)
-        "chakra.fire": .fire, "chakra.water": .water, "chakra.wind": .wind,
-        "chakra.lightning": .lightning, "chakra.earth": .earth, "chakra.ice": .ice,
-        "chakra.wood": .wood, "chakra.lava": .lava, "chakra.explosion": .explosion,
-        "chakra.magnet": .magnet, "chakra.supermagnet": .superMagnet,
-        // MBTI
-        "mbti.istj": .earth, "mbti.isfj": .wood, "mbti.infj": .superMagnet,
-        "mbti.intj": .magnet, "mbti.istp": .explosion, "mbti.isfp": .ice,
-        "mbti.infp": .water, "mbti.intp": .superMagnet, "mbti.estp": .lightning,
-        "mbti.esfp": .fire, "mbti.enfp": .fire, "mbti.entp": .wind,
-        "mbti.estj": .earth, "mbti.esfj": .wood, "mbti.enfj": .magnet, "mbti.entj": .explosion,
-        // 혈액형
-        "blood.a": .earth, "blood.b": .wind, "blood.o": .fire, "blood.ab": .superMagnet,
-        // 사상의학
-        "sasang.taeyang": .fire, "sasang.taeeum": .earth, "sasang.soyang": .lightning,
-        "sasang.soeum": .water,
-        // 십이지신
-        "zodiac12.rat": .lightning, "zodiac12.ox": .earth, "zodiac12.tiger": .fire,
-        "zodiac12.rabbit": .wind, "zodiac12.dragon": .lava, "zodiac12.snake": .magnet,
-        "zodiac12.horse": .wind, "zodiac12.goat": .wood, "zodiac12.monkey": .explosion,
-        "zodiac12.rooster": .superMagnet, "zodiac12.dog": .earth, "zodiac12.pig": .wood,
-        // 별자리
-        "constellation.aries": .fire, "constellation.taurus": .earth, "constellation.gemini": .wind,
-        "constellation.cancer": .water, "constellation.leo": .fire, "constellation.virgo": .earth,
-        "constellation.libra": .wind, "constellation.scorpio": .magnet,
-        "constellation.sagittarius": .explosion, "constellation.capricorn": .earth,
-        "constellation.aquarius": .superMagnet, "constellation.pisces": .water,
+        // D&D 성향
+        "dnd_alignment.lg": .earth, "dnd_alignment.ng": .wood, "dnd_alignment.cg": .fire,
+        "dnd_alignment.ln": .magnet, "dnd_alignment.tn": .superMagnet, "dnd_alignment.cn": .wind,
+        "dnd_alignment.le": .lava, "dnd_alignment.ne": .ice, "dnd_alignment.ce": .explosion,
+        // D&D 종족
+        "dnd_race.human": .earth, "dnd_race.elf": .wood, "dnd_race.dwarf": .earth,
+        "dnd_race.halfling": .wind, "dnd_race.gnome": .lightning, "dnd_race.orc": .explosion,
+        // D&D 속성피해
+        "dnd_damage.acid": .water, "dnd_damage.cold": .ice, "dnd_damage.fire": .fire,
+        "dnd_damage.lightning": .lightning, "dnd_damage.wind": .wind,
         // 에겐-테토
-        "egen_teto.egen": .water, "egen_teto.teto": .explosion,
-        // 관상
-        "physiognomy.dog": .fire, "physiognomy.cat": .ice, "physiognomy.fox": .wind,
-        "physiognomy.bear": .earth, "physiognomy.rabbit": .wood, "physiognomy.deer": .ice,
+        "egen_teto.egen": .water, "egen_teto.teto": .fire,
+        // 기타(misc)
+        "misc.musician": .wind, "misc.lawyer": .earth, "misc.comedian": .explosion,
+        "misc.idol": .superMagnet, "misc.actor": .fire, "misc.lie": .magnet,
+        "misc.magic": .superMagnet, "misc.picky_eater": .wood, "misc.farter": .explosion,
+        "misc.genius": .lightning, "misc.airhead": .earth, "misc.peace": .wind,
+        "misc.love": .superMagnet, "misc.light": .fire, "misc.darkness": .magnet,
+        "misc.otaku": .wood, "misc.flower": .wood, "misc.plant": .wood,
+        "misc.know_it_all": .earth, "misc.premium": .magnet, "misc.lowbrow": .explosion,
+        "misc.young_trendy": .wind, "misc.old_trendy": .earth,
+        // 음식
+        "food.spicy": .fire, "food.mukbang": .explosion,
+        // 동물상
+        "animal.cat": .ice, "animal.dog": .fire,
+        // 게임 롤
+        "game.tank": .earth, "game.dealer": .explosion,
+        // 세대 트렌드
+        "trend.mzeong": .wind,
+        // 계절
+        "season.spring": .wood, "season.summer": .fire,
+        "season.autumn": .wind, "season.winter": .ice,
     ]
 }
