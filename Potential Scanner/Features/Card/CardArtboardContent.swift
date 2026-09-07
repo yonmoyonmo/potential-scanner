@@ -28,7 +28,7 @@ extension CardArtboardContent {
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
         self.init(
             photo: result.photo,
-            displayName: trimmed.isEmpty ? result.type.name : trimmed,
+            displayName: trimmed.isEmpty ? NamePool.text(forID: result.defaultNameID) : trimmed,
             power: result.power,
             typeLabel: result.type.displayLabel,
             typeDescription: result.type.description,

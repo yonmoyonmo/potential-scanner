@@ -12,10 +12,11 @@ struct ScanResult {
     let commentID: String
     let closingLineID: String
     let powerBasisID: String
+    let defaultNameID: String
 }
 
 enum ScanResultGenerator {
-    /// 타입/코멘트는 서로 완전히 독립적으로 랜덤 추출한다 (콘텐츠.md: 의도된 미스매치가 재미 포인트).
+    /// 타입/코멘트/기본이름은 서로 완전히 독립적으로 랜덤 추출한다 (콘텐츠.md: 의도된 미스매치가 재미 포인트).
     static func generate(from photo: UIImage) -> ScanResult {
         ScanResult(
             photo: photo,
@@ -23,7 +24,8 @@ enum ScanResultGenerator {
             type: PotentialType.all.randomElement()!,
             commentID: CommentPool.commentIDs.randomElement()!,
             closingLineID: CommentPool.closingLineIDs.randomElement()!,
-            powerBasisID: CommentPool.powerBasisIDs.randomElement()!
+            powerBasisID: CommentPool.powerBasisIDs.randomElement()!,
+            defaultNameID: NamePool.nameIDs.randomElement()!
         )
     }
 }

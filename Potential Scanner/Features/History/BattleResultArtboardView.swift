@@ -38,6 +38,11 @@ struct BattleResultArtboardView: View {
                     .background(RoundedRectangle(cornerRadius: PSRadius.card).fill(PSColor.cardFill))
                     .psHardShadow(radius: PSRadius.card)
             }
+
+            Text(String(localized: String.LocalizationValue("ui.footer.brand")))
+                .font(PSTypography.font(size: 24))
+                .foregroundStyle(PSColor.soft)
+                .frame(maxWidth: .infinity, alignment: .trailing)
         }
         .padding(40)
         .frame(width: BattleResultCanvas.width)

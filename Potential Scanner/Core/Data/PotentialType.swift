@@ -124,6 +124,28 @@ extension PotentialType {
         PotentialType(id: "season.summer", seriesID: "season"),
         PotentialType(id: "season.autumn", seriesID: "season"),
         PotentialType(id: "season.winter", seriesID: "season"),
+        // worker (5)
+        PotentialType(id: "worker.boss", seriesID: "worker"),
+        PotentialType(id: "worker.rookie", seriesID: "worker"),
+        PotentialType(id: "worker.freelancer", seriesID: "worker"),
+        PotentialType(id: "worker.ceo", seriesID: "worker"),
+        PotentialType(id: "worker.parttimer", seriesID: "worker"),
+        // rank (5)
+        PotentialType(id: "rank.private", seriesID: "rank"),
+        PotentialType(id: "rank.privateFirstClass", seriesID: "rank"),
+        PotentialType(id: "rank.corporal", seriesID: "rank"),
+        PotentialType(id: "rank.sergeant", seriesID: "rank"),
+        PotentialType(id: "rank.veteran", seriesID: "rank"),
+        // persona (9)
+        PotentialType(id: "persona.outsider", seriesID: "persona"),
+        PotentialType(id: "persona.insider", seriesID: "persona"),
+        PotentialType(id: "persona.spontaneous", seriesID: "persona"),
+        PotentialType(id: "persona.planner", seriesID: "persona"),
+        PotentialType(id: "persona.dreamer", seriesID: "persona"),
+        PotentialType(id: "persona.realist", seriesID: "persona"),
+        PotentialType(id: "persona.introvert", seriesID: "persona"),
+        PotentialType(id: "persona.extrovert", seriesID: "persona"),
+        PotentialType(id: "persona.foreverAlone", seriesID: "persona"),
     ]
 
     /// 예전에 뽑기 풀에 있었지만 지금은 빠진 타입들. 새 스캔에서는 절대 안 뽑히지만,

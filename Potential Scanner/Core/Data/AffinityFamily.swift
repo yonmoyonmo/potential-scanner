@@ -92,6 +92,16 @@ extension AffinityFamily {
         // 계절
         "season.spring": .wood, "season.summer": .fire,
         "season.autumn": .wind, "season.winter": .ice,
+        // 직장인 유형
+        "worker.boss": .earth, "worker.rookie": .water, "worker.freelancer": .wind,
+        "worker.ceo": .magnet, "worker.parttimer": .ice,
+        // 군대 계급
+        "rank.private": .water, "rank.privateFirstClass": .wood, "rank.corporal": .wind,
+        "rank.sergeant": .earth, "rank.veteran": .lava,
+        // 성격/라이프스타일
+        "persona.outsider": .ice, "persona.insider": .fire, "persona.spontaneous": .wind,
+        "persona.planner": .earth, "persona.dreamer": .superMagnet, "persona.realist": .magnet,
+        "persona.introvert": .water, "persona.extrovert": .lightning, "persona.foreverAlone": .wood,
 
         // --- 아래는 legacy 타입(현재 뽑기 풀엔 없지만, 예전에 저장된 카드가 참조할 수 있음) ---
         // 헌터 넨

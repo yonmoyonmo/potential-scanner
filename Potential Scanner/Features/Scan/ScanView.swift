@@ -89,6 +89,17 @@ struct ScanView: View {
                             .background(Circle().fill(.black.opacity(0.4)))
                     }
                     Spacer()
+
+                    // 셀피 스캔용 전/후면 전환. 라이브 카메라를 보고 있는 대기 상태에서만 노출한다 —
+                    // 사진을 불러왔을 때나 촬영 연출 중엔 의미가 없다.
+                    if pickedImage == nil, case .idle = viewModel.phase {
+                        Button(action: { viewModel.camera.switchCamera() }) {
+                            Image(systemName: "camera.rotate")
+                                .foregroundStyle(.white)
+                                .padding(12)
+                                .background(Circle().fill(.black.opacity(0.4)))
+                        }
+                    }
                 }
                 .padding()
 

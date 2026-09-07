@@ -86,7 +86,8 @@ struct ResultView: View {
             photoData: photoData,
             power: result.power,
             typeID: result.type.id,
-            commentID: result.commentID
+            commentID: result.commentID,
+            defaultNameID: result.defaultNameID
         )
         modelContext.insert(card)
         isSaved = true

@@ -19,6 +19,9 @@ final class CameraService: NSObject, @unchecked Sendable {
     private let photoOutput = AVCapturePhotoOutput()
     private let sessionQueue = DispatchQueue(label: "potentialscanner.camera.session")
     private var photoContinuation: CheckedContinuation<UIImage?, Never>?
+    private var currentInput: AVCaptureDeviceInput?
+    /// sessionQueue에서만 읽고 쓴다. UI(메인 스레드)에서 직접 참조하지 말 것.
+    private var position: AVCaptureDevice.Position = .back
 
     func requestAccessAndConfigure() {
         AVCaptureDevice.requestAccess(for: .video) { [weak self] granted in
@@ -37,7 +40,7 @@ final class CameraService: NSObject, @unchecked Sendable {
         session.sessionPreset = .photo
 
         guard
-            let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),
+            let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: position),
             let input = try? AVCaptureDeviceInput(device: device),
             session.canAddInput(input)
         else {
@@ -45,6 +48,7 @@ final class CameraService: NSObject, @unchecked Sendable {
             return
         }
         session.addInput(input)
+        currentInput = input
 
         guard session.canAddOutput(photoOutput) else {
             session.commitConfiguration()
@@ -53,6 +57,41 @@ final class CameraService: NSObject, @unchecked Sendable {
         session.addOutput(photoOutput)
         session.commitConfiguration()
         session.startRunning()
+    }
+
+    /// 셀피 스캔용 전/후면 전환. 프리뷰는 `AVCaptureVideoPreviewLayer`가 알아서
+    /// 좌우 반전해주지만, 실제 캡처본은 그렇지 않아서 전면일 때만 수동으로 반전시켜
+    /// 사용자가 프리뷰에서 본 그대로(거울상)가 카드 사진으로 저장되게 한다.
+    func switchCamera() {
+        sessionQueue.async {
+            let newPosition: AVCaptureDevice.Position = self.position == .back ? .front : .back
+            guard
+                let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: newPosition),
+                let newInput = try? AVCaptureDeviceInput(device: device)
+            else { return }
+
+            self.session.beginConfiguration()
+            defer { self.session.commitConfiguration() }
+
+            if let currentInput = self.currentInput {
+                self.session.removeInput(currentInput)
+            }
+            guard self.session.canAddInput(newInput) else {
+                // 실패 시 원래 입력 복구.
+                if let currentInput = self.currentInput { self.session.addInput(currentInput) }
+                return
+            }
+            self.session.addInput(newInput)
+            self.currentInput = newInput
+            self.position = newPosition
+            self.updateMirroring()
+        }
+    }
+
+    private func updateMirroring() {
+        guard let connection = photoOutput.connection(with: .video) else { return }
+        connection.automaticallyAdjustsVideoMirroring = false
+        connection.isVideoMirrored = position == .front
     }
 
     func stop() {

@@ -14,6 +14,7 @@ final class ScanCard {
     var power: Int
     var typeID: String
     var commentID: String
+    var defaultNameID: String = "name.001"
     var scannedAt: Date
     var wins: Int = 0
     var losses: Int = 0
@@ -24,6 +25,7 @@ final class ScanCard {
         power: Int,
         typeID: String,
         commentID: String,
+        defaultNameID: String = "name.001",
         scannedAt: Date = .now
     ) {
         self.id = UUID()
@@ -32,13 +34,14 @@ final class ScanCard {
         self.power = power
         self.typeID = typeID
         self.commentID = commentID
+        self.defaultNameID = defaultNameID
         self.scannedAt = scannedAt
     }
 }
 
 extension ScanCard {
-    /// 이름을 안 붙였으면 타입명으로 대체해서 보여준다.
+    /// 이름을 안 붙였으면 기본 이름 풀에서 뽑힌 이름으로 대체해서 보여준다.
     var displayName: String {
-        name.isEmpty ? (PotentialType.find(byID: typeID)?.name ?? typeID) : name
+        name.isEmpty ? NamePool.text(forID: defaultNameID) : name
     }
 }

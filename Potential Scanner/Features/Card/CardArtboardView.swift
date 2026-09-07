@@ -67,10 +67,13 @@ struct CardArtboardView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
 
-            Text(content.dateText)
-                .font(PSTypography.font(size: 24))
-                .foregroundStyle(PSColor.soft)
-                .frame(maxWidth: .infinity, alignment: .trailing)
+            HStack {
+                Text(String(localized: String.LocalizationValue("ui.footer.brand")))
+                Spacer()
+                Text(content.dateText)
+            }
+            .font(PSTypography.font(size: 24))
+            .foregroundStyle(PSColor.soft)
         }
         .padding(28)
         .frame(width: CardCanvas.size.width, height: CardCanvas.size.height)
